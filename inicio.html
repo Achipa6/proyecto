@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--esto es para decir el tipo de lenguaje de programación que vamos hacer, en este caso html-->
+
+<html lang="es">
+<!--esto es para decirle al navegador el idioma-->
+
+<head> <!--aquí ponemos todas nuestras configuraciones de página-->
+  <title>Kikuk</title> <!--para que nos salga el nombre en la pestaña del navegador-->
+  <meta charset="utf-8" /> <!--para poder usar carateres como tildes, etc-->
+  <meta name="author" content="Aroa" /> <!--información para el navegador que nos incluya en su base de datos-->
+  <meta name="keywords" content="web, desarrollo, paginas, diseño, developer" /> <!--palabras clavepara cuamdo busquen en el buscador que aparezcamos-->
+  <meta name="descriptiom" content="Portolio disañadora web" /> <!--descripción de nuestra pagina-->
+  <link rel="stylesheet" type="text/css" href="style/inicio.css" /> <!--para enlazar o unir los estilos, enlazar el css)-->
+  <link rel="icon" type="image/x-icon" href="images/Imagen1.png" /> <!--para cambiar el icono que sale en la pestaña de la pagina-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--para incluir la libreria de fontawesome-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" /> <!--para responsive, adapatar el contenido a los diferentes dispositivos-->
+  <script src="script/inicio.js" defer></script> <!--para enlazar el JavaScript y ponemos defer para que se espere el javascript a que carge todo el html primero-->
+</head>
+
+<body>
+<!--empieza la seccion de nuestra cabecera-->
+  <header class="header">
+    <nav class="header__nav">
+      <a href="index.html"><img src="images/kivukMorado.png" alt="KibukMorado" class="header__navImgen"/></a>
+      <ul class="header__navLista">
+        <li class="header__navElemento"><a href="sobreMi.html" class="header__navLink">Sobre mi</a></li>
+        <li><a href="proyectos.html" class="header__navLink">Proyectos</a></li>
+        <li><a href="index.html" class="header__navLink">Portada</a></li>
+      </ul>
+    </nav>
+    <div class="header__oculto ">
+      <button type="button" class="header__ocultoIcono header__ocultoIcono--ocultar" id="botonMenu"><i class="fa-solid fa-bars"></i></button>
+      <ul class="header__ocultoLista" id="menu">
+          <li class="header__ocultoElemento"><a href="sobreMi.html" class="header__ocultoLink">Sobre Mi</a></li>
+          <li class="header__ocultoElemento"><a href="proyectos.html" class="header__ocultoLink">Proyectos</a></li>
+          <li class="header__ocultoElemento"><a href="index.html" class="header__ocultoLink">Portada</a></li>
+      </ul>
+  </div>
+  </header>
+<!--empieza la seccion Que es Kivuk-->
+  <main class="pagina">
+    <a href="inicio.html"><img src="images/flechaFondoMorado.png" alt="Flecha" class="pagina__flecha"></a>
+    <section class="descripcion">
+      <h2 class="descripcion__contenedorTitulo">¿QUÉ ES KIVUK?</h2>
+      <article class="descripcion__contenedor">
+        <p class="descripcion__contenedorTexto">
+          Somos tu aliado estratégico en Alicante para impulsar tu presencia
+          en línea. Nuestra agencia de desarrollo web se especializa en crear
+          soluciones digitales innovadoras que se adaptan a tus necesidades
+          específicas. Con un enfoque centrado en el cliente, trabajamos mano
+          a mano contigo para entender tus objetivos y convertirlos en
+          realidades digitales.
+        </p>
+        <p class="descripcion__contenedorTexto">
+          Desde el diseño hasta la implementación, nos
+          comprometemos a ofrecerte un servicio de primera clase que no solo
+          cumpla, sino que supere tus expectativas. Con un equipo de expertos
+          apasionados por la tecnología y la creatividad, estamos aquí para
+          ser tu socio en el camino hacia el éxito en línea en Alicante y más
+          allá.
+        </p>
+      </article>
+    </section>
+<!--empieza la seccion Cards-->
+    <section class="card">
+      <div class="card__contenedor">
+        <p class="card__contenedorIcono"><i class="fa-solid fa-shop-lock"></i></p>
+        <h3 class="card__contenedorTitulo">Desarrollo Ecommerce</h3>
+        <p class="card__contenedorTexto">
+          Es una estrategia esencial para empresas que buscan expandir su
+          presencia en el mercado digital. Con una plataforma de comercio
+          electrónico bien diseñada y optimizada, las empresas pueden alcanzar
+          nuevos niveles de éxito y crecimiento. La clave del desarrollo
+          ecommerce radica en la creación de una experiencia de compra fluida
+          y atractiva para los clientes. Esto incluye una
+          navegación intuitiva, productos detallados y un proceso
+          de pago seguro. Una de las principales ventajas del desarrollo
+          ecommerce es poder llegar a un público más amplio.
+        </p>
+      </div>
+      <div class="card__contenedor">
+        <p class="card__contenedorIcono"><i class="fa-solid fa-laptop-code"></i></p>
+        <h3 class="card__contenedorTitulo">Web a medida</h3>
+        <p class="card__contenedorTexto">
+          Es la clave para construir una presencia digital única y efectiva.
+          En un mercado saturado, la personalización y la adaptabilidad son
+          esenciales para destacar. Con servicios de desarrollo web a medida,
+          como los ofrecidos por Kivuk, podemos crear sitios web que se
+          adapten perfectamente a sus necesidades y objetivos específicos. La
+          belleza del desarrollo web a medida radica en su capacidad para
+          ofrecer soluciones únicas y escalables. Con un enfoque centrado en
+          el cliente, Kivuk trabaja estrechamente con cada cliente para
+          comprender sus metas y desafíos.
+        </p>
+      </div>
+      <div class="card__contenedor">
+        <p class="card__contenedorIcono">
+          <i class="fa-brands fa-wordpress-simple"></i></i>
+        </p>
+        <h3 class="card__contenedorTitulo">Desarrollo WordPress</h3>
+        <p class="card__contenedorTexto">
+          El desarrollo con los mejores diseñadores es la clave para construir
+          una presencia digital única y efectiva. Kivuk le ofrece servicios con
+          los mejores profesionales que le ayudaran en todo el proceso. Podemos 
+          crear su sitio web personalizado desde cero usando lenguajes de 
+          programación específicos y adaptados a todos los clientes que les 
+          interese tener las mejores prestaciones en su web. Entendemos la 
+          importancia de ofrecer soluciones adaptadas al desarrollo de las páginas 
+          web, por ello en Kivuk le ofrecemos soluciones de alta calidad que 
+          impulsen el éxito de su web.
+        </p>
+      </div>
+    </section>
+<!--empieza la seccion Sbore mí-->
+    <section class="sobre">
+      <div class="sobre__contenedor">
+        <h2 class="sobre__contenedorTitulo">SOBRE MÍ</h2>
+        <div class="sobre__contenedorExplicacion">
+          <div class="sobre__contenedorDescripcion">
+            <p class="sobre__contenedorTexto">
+              Soy Aroa, una apasionada diseñadora web con una visión vibrante.
+              Mi viaje en el mundo del diseño comenzó a los 36 años, y desde
+              entonces, cada línea de código es una oportunidad de crear magia
+              digital. Con una mezcla única de creatividad y destreza técnica, mi
+              objetivo es fusionar la estética con la funcionalidad en cada
+              proyecto. Mi pasión me impulsa a explorar nuevas posibilidades y
+              aportar una perspectiva fresca a cada desafío. Cuando no estoy
+              inmerso en el mundo digital, puedes encontrarme buscando inspiración
+              en la naturaleza y la cultura. Convierto ideas en experiencias
+              visuales impactantes, trascendiendo la pantalla y dejando huella en
+              cada pixel.
+            </p>
+            <p><a href="sobreMi.html" class="sobre__contenedorBoton">Conóceme</a></p>
+          </div>
+          <img src="images/sobreMi.jpg" alt="Persona" class="sobre__contenedorIagen">
+        </div>
+      </div>
+    </section>
+<!--empieza la seccion Proyectos-->
+    <section class="proyectos">
+      <h2 class="Proyectos__titulo">NUESTROS PROYECTOS</h2>
+      <div class="proyectos__contenedor">
+
+        <article class="proyectos__contenedorCard">
+          <img src="images/rinconesmMolones.jpg" alt="Rincones molones" class="proyectos__contenedorImagen">
+          <div class="proyectos__contenedorDescripcion">
+            <h3 class="proyectos__contenedorTexto"><a href="https://rinconesmolones.com/"  target="blank" class="proyectos__contenedorTitulo">Rincones</a></h3>
+          </div>
+        </article>
+        <article class="proyectos__contenedorCard">
+          <img src="images/hotelSevilla.jpg" alt="Hotel sevilla" class="proyectos__contenedorImagen">
+          <div class="proyectos__contenedorDescripcion"><!--lo ponemos dentro de un div para poder ocultarlo con position absolute-->
+            <h3><a href="https://hotel.kivuk.com/"  target="blank" class="proyectos__contenedorTitulo">Hotel Sevilla</a></h3>
+          </div>
+        </article>
+        <article class="proyectos__contenedorCard">
+          <img src="images/revistaViajes.jpg" alt="Revista viajes" class="proyectos__contenedorImagen">
+          <div class="proyectos__contenedorDescripcion">
+            <h3 class="proyectos__contenedorTexto"><a href="https://revista1.kivuk.com/"  target="blank" class="proyectos__contenedorTitulo">Travel</a></h3>
+          </div>
+        </article>
+        <article class="proyectos__contenedorCard">
+          <img src="images/iturri.jpg" alt="Iturri" class="proyectos__contenedorImagen">
+          <div class="proyectos__contenedorDescripcion">
+            <h3><a href="https://kivuk.com/iturri/iturri/inicio/"  target="blank" class="proyectos__contenedorTitulo">Iturri</a></h3>
+          </div>
+        </article>
+        <article class="proyectos__contenedorCard">
+          <img src="images/junior.jpg" alt="Junior" class="proyectos__contenedorImagen">
+          <div class="proyectos__contenedorDescripcion">
+            <h3><a href="https://juniorproject.netlify.app/"  target="blank" class="proyectos__contenedorTitulo">Junior</a></h3>
+          </div>
+        </article>
+        <article class="proyectos__contenedorCard">
+          <img src="images/acordeon.jpg" alt="Acordeon" class="proyectos__contenedorImagen">
+          <div class="proyectos__contenedorDescripcion">
+            <h3><a href="https://acordeonproyecto.netlify.app/"   target="blank" class="proyectos__contenedorTitulo">Acordeón</a></h3>
+          </div>
+        </article>
+        <article class="proyectos__contenedorCard">
+          <img src="images/ligthbox.jpg" alt="Lightbox" class="proyectos__contenedorImagen">
+          <div class="proyectos__contenedorDescripcion">
+            <h3><a href="https://imagenhover.netlify.app/"  target="blank" class="proyectos__contenedorTitulo">Lightbox</a></h3>
+          </div>
+        </article>
+        <article class="proyectos__contenedorCard">
+          <img src="images/pestanas.jpg" alt="Pestañas" class="proyectos__contenedorImagen">
+          <div class="proyectos__contenedorDescripcion">
+            <h3><a href="https://pestana.netlify.app/" target="blank" class="proyectos__contenedorTitulo">Pestañas</a></h3>
+          </div>
+        </article>
+        <p class="sobre__contenedorConoceme"><a href="proyectos.html" class="sobre__contenedorBoton boton__proyectos">Proyectos</a></p>
+
+      </div>
+
+    </section>
+  </main>
+  <!--empieza la seccion Pie de página-->
+  <footer class="footer">
+    <div class="footer__contenedorPaginas">
+      <ul class="footer__contenedorLista">
+        <li class="footer__contenedorElemento">Aviso Legal</li>
+        <li class="footer__contenedorElemento">Politica de Privacidad</li>
+        <li class="footer__contenedorElemento"><a href="sobreMi.html" class="footer__contenedorElemento--link">Contáctanos</a></li>
+      </ul>
+    </div>
+    <div class="footer__contenedorIconos">
+      <ul class="footer__contenedorLista footer__contenedorLista--iconos">
+        <li class="footer__contenedorElemento"><i class="fa-brands fa-facebook"></i></li>
+        <li class="footer__contenedorElemento"><i class="fa-brands fa-twitter"></i></li>
+        <li class="footer__contenedorElemento"><i class="fa-brands fa-instagram"></i></li>
+        <li class="footer__contenedorElemento"><i class="fa-brands fa-square-github"></i></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+
+</html>

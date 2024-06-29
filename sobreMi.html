@@ -1,0 +1,175 @@
+<!DOCTYPE html><!--esto es para decir el tipo de lenguaje de programación que vamos hacer, en este caso html-->
+
+<html lang="es"><!--esto es para decirle al navegador el idioma-->
+
+    <head><!--aquí ponemos todas nuestras configuraciones de página-->
+        <title>Kikuk</title><!--para que nos salga el nombre en la pestaña del navegador-->
+        <meta charset="utf-8"><!--para poder usar carateres como tildes, etc-->
+        <meta name="author" content="Aroa"><!--información para el navegador que nos incluya en su base de datos-->
+        <meta name="keywords" content="web, desarrollo, paginas, diseño, developer"><!--palabras clavepara cuamdo busquen en el buscador que aparezcamos-->
+        <meta name="descriptiom" content="Portolio disañadora web"><!--descripción de nuestra pagina-->
+        <link rel="stylesheet" type="text/css" href="style/sobreMi.css"> <!--para enlazar o unir los estilos, enlazar el css)-->
+        <link rel="icon" type="image/x-icon" href="images/Imagen1.png"> <!--para cambiar el icono que sale en la pestaña de la pagina-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--para incluir la libreria de fontawesome-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--para responsive, adapatar el contenido a los diferentes dispositivos-->
+        <script src="script/sobreMi.js" defer></script><!--para enlazar el JavaScript y ponemos defer para que se espere el javascript a que carge todo el html primero-->
+
+    </head>
+ 
+<body>
+    <!--empieza la seccion de nuestra cabecera-->
+      <header class="header">
+        <nav class="header__nav">
+          <a href="index.html"><img src="images/kivukRosa.png" alt="KibukRosa" class="header__navImgen"/></a>
+          <ul class="header__navLista">
+            <li class="header__navElemento"><a href="inicio.html" class="header__navLink">Inicio</a></li>
+            <li><a href="proyectos.html" class="header__navLink">Proyectos</a></li>
+            <li><a href="index.html" class="header__navLink">Portada</a></li>
+          </ul>
+        </nav>
+        <div class="header__oculto ">
+            <button type="button" class="header__ocultoIcono header__ocultoIcono--ocultar" id="botonMenu"><i class="fa-solid fa-bars"></i></button>
+            <ul class="header__ocultoLista" id="menu">
+                <li class="header__ocultoElemento"><a href="inicio.html" class="header__ocultoLink">Inicio</a></li>
+                <li class="header__ocultoElemento"><a href="proyectos.html" class="header__ocultoLink">Proyectos</a></li>
+                <li class="header__ocultoElemento"><a href="index.html" class="header__ocultoLink">Portada</a></li>
+            </ul>
+            
+        </div>
+      </header>
+    <!--empieza la seccion sobre mí-->
+      <main class="pagina">
+        <a href="sobreMi.html"><img src="images/flechaFondoRosa.png" alt="Flecha" class="pagina__flecha"></a>
+        <section class="sobremi">
+            <div class="sobremi__contenedor">
+                <h2 class="sobre__contenedorTitulo">SOBRE MÍ</h2>
+                <p class="sobremi__contenedorTexto">              
+                    Soy Aroa, una apasionada diseñadora web con una visión vibrante.
+                    Mi viaje en el mundo del diseño comenzó a los 36 años, y desde
+                    entonces, cada línea de código es una oportunidad de crear magia
+                    digital. Con una mezcla única de creatividad y destreza técnica, mi
+                    objetivo es fusionar la estética con la funcionalidad en cada
+                    proyecto. Mi pasión me impulsa a explorar nuevas posibilidades y
+                    aportar una perspectiva fresca a cada desafío. Cuando no estoy
+                    inmersa en el mundo digital, puedes encontrarme buscando inspiración
+                    en la naturaleza. Convierto ideas en experiencias
+                    visuales impactantes, trascendiendo la pantalla y dejando huella en
+                    cada pixel.
+                </p>
+                <p class="sobremi__contenedorTexto">              
+                    
+                    Aunque suene extraño, estudié mecánica industrial y mecánica aeronáutica,  
+                    me he dedicado toda mi vida profesional al tema de la mecánica, hasta hace 
+                    un tiempo me dediqué a reparar helicópteros y a la mecánica en general, es 
+                    un mundo muy apasionante, pero tenía una espinita. 
+                    Ahora he descubierto un mundo lleno de código que ya empieza a tener sentido. 
+                    Nunca me había dedicado al mundo del diseño web y he descubierto que es un mundo 
+                    fantástico lleno de posibilidades que dejan volar mi imaginación. Desde siempre 
+                    era una cosa que me atraía y tenía en mente hacer alguna vez. Cuando te adentras 
+                    en este  mundo, descubres toda la magia que se esconde en el back-end.
+                </p>
+            </div>
+        </section>
+    <!--empieza la seccion imagenes-->
+        <section class="imagenes">
+            <p class="imagenes__contenedorBoton" id="botonAtrasa">&leftarrow;</p>
+            <div class="imagenes__contenedor">
+                <img src="images/imagenesSobremi/bloques.jpg" alt="Bloques" class="imagenes__contenedorImg" id="imagen">
+            </div>
+            <p class="imagenes__contenedorBoton imagenes__contenedorBoton--derecha" id="botolonAdelanta">&rightarrow;</p>
+        </section>
+    <!--empieza la seccion estudios y habilidades-->
+        <section class="estudios">
+            <div class="estudios__contenedor">
+                <h2 class="sobre__contenedorTitulo">ESTUDIOS</h2>
+                <div class="estudios__contenedorInfo">
+                    <div class="estudios__contenedorBarras">
+                        <img src="images/imagenesSobremi/barraResolucion.png" alt="barraResolucion" class="estudios__contenedorPorcentaje">
+                        <img src="images/imagenesSobremi/barraProactividad.png" alt="Proactividad" class="estudios__contenedorPorcentaje">
+                        <img src="images/imagenesSobremi/barraComunincacion.png" alt="Comunicación" class="estudios__contenedorPorcentaje">
+                        <img src="images/imagenesSobremi/barraEquipo.png" alt="Equipo" class="estudios__contenedorPorcentaje">
+                    </div>
+                    <p class="estudios__contenedorTexto">              
+                        A parte de los estudios ya mencionados, he cursado un BootCamp en el centro de Estudios 
+                        de Innovación, Diseño y Marqueting-CEI, realizando módulos sobre diseño con WordPress,
+                        diseño web con Html5, CSS y JavaScript, UX/UI y FullStack.
+                        Usando programas como Figma, Visual Code Estudio, WordPress, Canvas, entre otros. Puedo 
+                        crear web impresionantes con la idea que tengas en mente.
+                    </p>
+                    <div class="estudios__contenedorIconos">
+                        <img src="images/imagenesSobremi/174881.png" alt="WordPress" class="estudios__iconosItems">
+                        <img src="images/imagenesSobremi/figma.png" alt="Figma" class="estudios__iconosItems">
+                        <img src="images/imagenesSobremi/visual.png" alt="Visual" class="estudios__iconosItems">
+                        <img src="images/imagenesSobremi/google.png" alt="Google" class="estudios__iconosItems">
+                        <img src="images/imagenesSobremi/red.png" alt="redes" class="estudios__iconosItems">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--empieza la seccion contactame-->
+        <section class="contactame">
+            <div class="contactame__contenedor" id="formulario">
+                <h2 class="sobre__contenedorTitulo">CONTACTO</h2>
+                <form name="Formulario de contacto" action="url" method="get" enctype="multipart/form-data" class="contactame__formulario"> <!--nombre del formulario action y method son obligatorias action es la url donde vamos a enviar los datos
+                        metodo que usa para enviar los datos get o post-->
+                    <label for="n1">Nombre:</label>  <!--es para denominar el input que hay bajo-->
+                    <input name="nombre" type="text" id="n1" size="20" required class="contactame__formularioInput"><!--se ve como una caja donde puedo poner lo que quiera-->
+
+                    <label for="n2">Apellidos:</label> <!--con la id relacionamos el input con label-->
+                    <input name="apellidos" type="text" id="n2" size="20" class="contactame__formularioInput">
+
+                    <label for="n3">Teléfono:</label>
+                    <input name="Telefono" type="number" id="n3" size="10" maxlength="7" class="contactame__formularioInput"> <!-- maxlenght para definir los caracteres max -->
+
+                    <label for="n4">Día de contacto:</label>
+                    <input name="nombre" type="date" id="n4" class="contactame__formularioInput">  <!--añade un calendario para selecciona la fecha-->
+
+                    <label>Horario de contacto:</label>
+                    <div class="contactame__contenedorOpciones" >
+                        <input type="radio" name="horario">Mañanas  <!--radio solo deja seleccionar 1-->
+                        <input type="radio" name="horario" >Tardes
+                        <input type="radio" name="horario">Noches
+                        <input type="radio" name="horario">Indiferente
+                    </div>
+                    <label for="n5">Motivo de consulta:</label>
+                    <select name="seccionPagina" id="n5"class="contactame__formularioInput">
+                        <option value="Presupuesto">Presupuesto</option>
+                        <option value="Informacion"selected>Información</option> <!--sale seleccionada por defecto-->
+                        <option value="Dudas">Dudas</option>
+                        <option value="Servicios">Servicios</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                    <label for="n6">Mensaje:</label>
+                    <textarea name="mensaje" cols="60" rows="20" id="n6" class="contactame__formularioTexto" placeholder=" Deja tu mensaje" required></textarea> 
+
+                    <div class="contactame__contenedorBoton"><button type="submit" class="contactame__formularioBoton" id="botonEnviar">Enviar</button> </div>
+                </form>
+            </div>
+
+
+            </div>
+        </section>
+      </main>
+      <!--empieza la seccion Pie de página-->
+      <footer class="footer">
+        <div class="footer__contenedorPaginas">
+          <ul class="footer__contenedorLista">
+            <li class="footer__contenedorElemento">Aviso Legal</li>
+            <li class="footer__contenedorElemento">Política de Privacidad</li>
+            <li class="footer__contenedorElemento"><a href="sobreMi.html" class="footer__contenedorElemento--link">Contáctanos</a></li>
+          </ul>
+        </div>
+        <div class="footer__contenedorIconos">
+          <ul class="footer__contenedorLista footer__contenedorLista--iconos">
+            <li class="footer__contenedorElemento"><i class="fa-brands fa-facebook"></i></li>
+            <li class="footer__contenedorElemento"><i class="fa-brands fa-twitter"></i></li>
+            <li class="footer__contenedorElemento"><i class="fa-brands fa-instagram"></i></li>
+            <li class="footer__contenedorElemento"><i class="fa-brands fa-square-github"></i></li>
+          </ul>
+        </div>
+      </footer>
+    </body>
+    
+    
+    </html>

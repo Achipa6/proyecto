@@ -1,0 +1,204 @@
+<!DOCTYPE html><!--esto es para decir el tipo de lenguaje de programación que vamos hacer, en este caso html-->
+
+<html lang="es"><!--esto es para decirle al navegador el idioma-->
+
+    <head><!--aquí ponemos todas nuestras configuraciones de página-->
+        <title>Kikuk</title><!--para que nos salga el nombre en la pestaña del navegador-->
+        <meta charset="utf-8"><!--para poder usar carateres como tildes, etc-->
+        <meta name="author" content="Aroa"><!--información para el navegador que nos incluya en su base de datos-->
+        <meta name="keywords" content="web, desarrollo, paginas, diseño, developer"><!--palabras clavepara cuamdo busquen en el buscador que aparezcamos-->
+        <meta name="descriptiom" content="Portolio disañadora web"><!--descripción de nuestra pagina-->
+        <link rel="stylesheet" type="text/css" href="style/proyectos.css"> <!--para enlazar o unir los estilos, enlazar el css)-->
+        <link rel="icon" type="image/x-icon" href="images/Imagen1.png"> <!--para cambiar el icono que sale en la pestaña de la pagina-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--para incluir la libreria de fontawesome-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--para responsive, adapatar el contenido a los diferentes dispositivos-->
+        <script src="script/proyectos.js" defer></script><!--para enlazar el JavaScript y ponemos defer para que se espere el javascript a que carge todo el html primero-->
+    </head>
+    <body> <!--empieza lo que vemos en nuestra web-->
+        <header class="header">
+            <nav class="header__nav">
+                <a href="index.html"><img src="images/kivukVerde.png" alt="KibukRosa" class="header__navImgen"></a>
+                <ul class="header__navLista">
+                    <li class="header__navElemento"><a href="sobreMi.html" class="header__navLink">Sobre mi</a></li>
+                    <li><a href="inicio.html" class="header__navLink">Inicio</a></li>
+                    <li><a href="index.html" class="header__navLink">Portada</a></li>
+                </ul>
+            </nav>
+            <div class="header__oculto ">
+                <button type="button" class="header__ocultoIcono header__ocultoIcono--ocultar" id="botonMenu"><i class="fa-solid fa-bars"></i></button>
+                <ul class="header__ocultoLista" id="menu">
+                    <li class="header__ocultoElemento"><a href="inicio.html" class="header__ocultoLink">Inicio</a></li>
+                    <li class="header__ocultoElemento"><a href="sobreMi.html" class="header__ocultoLink">Sobre Mi</a></li>
+                    <li class="header__ocultoElemento"><a href="index.html" class="header__ocultoLink">Portada</a></li>
+                </ul>
+                </ul>
+                
+            </div>
+        </header>
+
+        <main class="pagina">
+            <a href="proyectos.html"><img src="images/flechaFondoVerde.png" alt="Flecha" class="pagina__flecha"></a>
+            <!--empieza seccion imagenes de profectos-->
+            <section class="proyecto">
+
+
+                <div class="proyecto__imagenes">
+                    <button type="button" id="rincones" value="0" class="proyecto__boton"><img src="images/rinconesmMolones.jpg" alt="rinconesmMolones" id="rincones" class="proyecto__imagenRincones proyecto__contededor--img"></button>
+                    <button type="button" id="acordeon" value="1" class="proyecto__boton"><img src="images/acordeon.jpg" alt="Acordeón" class="proyecto__imagenAcordeon proyecto__contededor--img"></button>
+                    <button type="button" id="hotel" value="2" class="proyecto__boton"><img src="images/hotelSevilla.jpg" alt="HotelSevilla" class="proyecto__imagenHotel proyecto__contededor--img"></button>
+                    <button  type="button" id="iturri" value="3" class="proyecto__boton" ><img src="images/iturri.jpg" alt="Iturri" class="proyecto__imagenIturri proyecto__contededor--img"></button>
+                    <button type="button" id="junior" value="4" class="proyecto__boton"><img src="images/junior.jpg" alt="Junior" class="proyecto__imagenJunior proyecto__contededor--img"></button>
+                    <button type="button" id="ligthbox" value="5" class="proyecto__boton"><img src="images/ligthbox.jpg" alt="Lightbox" class="proyecto__imagenLigthbox proyecto__contededor--img"></button>
+                    <button type="button" id="pestanas" value="6" class="proyecto__boton"><img src="images/pestanas.jpg" alt="Iturri" class="proyecto__imagenPestanas proyecto__contededor--img"></button>
+                    <button type="button" id="viajes" value="7" class="proyecto__boton"><img src="images/revistaViajes.jpg" alt="viajes" class="proyecto__imagenViajes proyecto__contededor--img"></button>
+                    
+                </div>
+
+                <div class="proyecto__contednedorDatos--visible" id="fondo"> 
+                    <h3>ESTOS SON NUESTROS PROYECTOS</h3>
+                    <p>¿Quieres ver nuestros proyectos?
+                        <br>
+                        Picha sobre ellos
+                    </p>
+                </div>
+                <div class="proyecto__contednedorTexto">
+                    <div class="proyecto__contednedorDatos">
+                        <button class="proyecto__contenedorCruz" id="cruzRincones">&cross;</button>   
+                        <h3>Rincones Molones</h3>
+                        <p class="proyecto__contenedorPestañas">Rincones molones es un blog personal de una chica que viaja y cuenta sus experiencias y vivencias</p>
+                        <div class="proyecto__contednedorBoton">
+                            <p class="proyecto__contednedorBoton" ><i class="fa-brands fa-facebook proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-instagram proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-whatsapp proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"><i class="fa-brands fa-github proyecto__contednedorLogo"></i></p>
+                        </div>
+                    </div>
+                    <div class="proyecto__contednedorDatos" >
+                        <button class="proyecto__contenedorCruz" id="cruzAcordeon">&cross;</button>
+                        <h3>Acordeon</h3>
+                        <p class="proyecto__contenedorPestañas">Acordeón es un proyecto realizado en clase para poder practicar el acordeón</p>
+                        <div class="proyecto__contednedorBoton">
+                            <p class="proyecto__contednedorBoton" ><i class="fa-brands fa-facebook proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-instagram proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-whatsapp proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"><i class="fa-brands fa-github proyecto__contednedorLogo"></i></p>
+                        </div>
+                    </div>
+                    <div class="proyecto__contednedorDatos">
+                        <button class="proyecto__contenedorCruz" id="cruzHotel">&cross;</button>
+                        <h3>Hotel Sevilla</h3>
+                        <p class="proyecto__contenedorPestañas">Hotel sevilla es una pagina web de un hotel en el que puedes hacer reservas y ver galería y carta del menú</p>
+                        <div class="proyecto__contednedorBoton">
+                            <p class="proyecto__contednedorBoton" ><i class="fa-brands fa-facebook proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-instagram proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-whatsapp proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"><i class="fa-brands fa-github proyecto__contednedorLogo"></i></p>
+                        </div>
+                    </div>
+                    <div class="proyecto__contednedorDatos">
+                        <button class="proyecto__contenedorCruz" id="cruzIturri">&cross;</button>
+                        <h3>Iturri</h3>
+                        <p class="proyecto__contenedorPestañas">Iturri es una pagina web de venta de material especifico para bomberos, policias, rescatadores y sanitarios</p>
+                        <div class="proyecto__contednedorBoton">
+                            <p class="proyecto__contednedorBoton" ><i class="fa-brands fa-facebook proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-instagram proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-whatsapp proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"><i class="fa-brands fa-github proyecto__contednedorLogo"></i></p>
+                        </div>
+                    </div>
+                    <div class="proyecto__contednedorDatos">
+                        <button class="proyecto__contenedorCruz" id="cruzJunior">&cross;</button>
+                        <h3>Junior</h3>
+                        <p class="proyecto__contenedorPestañas">Junior es un proyecto que realizamos en clase sobre una tienda de muebles en la cual tenemos practicas con varios efectos</p>
+                        <div class="proyecto__contednedorBoton">
+                            <p class="proyecto__contednedorBoton" ><i class="fa-brands fa-facebook proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-instagram proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-whatsapp proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"><i class="fa-brands fa-github proyecto__contednedorLogo"></i></p>
+                        </div>
+                    </div>
+                    <div class="proyecto__contednedorDatos">
+                        <button class="proyecto__contenedorCruz" id="cruzLigthbox">&cross;</button>
+                        <h3>Ligthbox</h3>
+                        <p class="proyecto__contenedorPestañas">Ligthbox es una practica que hicimos en clase para practicar el efecto hover, al pasar el raton por encima se agranda la imagen</p>
+                        <div class="proyecto__contednedorBoton">
+                            <p class="proyecto__contednedorBoton" ><i class="fa-brands fa-facebook proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-instagram proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-whatsapp proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"><i class="fa-brands fa-github proyecto__contednedorLogo"></i></p>
+                        </div>
+                    </div>
+                    <div class="proyecto__contednedorDatos">
+                        <button class="proyecto__contenedorCruz" id="cruzPestana">&cross;</button>
+                        <h3>Pestañas</h3>
+                        <p class="proyecto__contenedorPestañas">Pestañas es una página práctica que hemos realizado para poder practicar los tags y ver el funcionamiento de ellos</p>
+                        <div class="proyecto__contednedorBoton">
+                            <p class="proyecto__contednedorBoton" ><i class="fa-brands fa-facebook proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-instagram proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-whatsapp proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"><i class="fa-brands fa-github proyecto__contednedorLogo"></i></p>
+                        </div>
+                    </div>
+                    <div class="proyecto__contednedorDatos">
+                        <button class="proyecto__contenedorCruz" id="cruzViajes">&cross;</button>
+                        <h3>Revista Viajes</h3>
+                        <p class="proyecto__contenedorPestañas">Revista viajes es una web de una revista que ofrece a sus clientes descuentos si están logueados, también ofrece consejos</p>
+                        <div class="proyecto__contednedorBoton">
+                            <p class="proyecto__contednedorBoton" ><i class="fa-brands fa-facebook proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-instagram proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"  ><i class="fa-brands fa-whatsapp proyecto__contednedorLogo"></i></p>
+                            <p class="proyecto__contednedorBoton"><i class="fa-brands fa-github proyecto__contednedorLogo"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacta">
+               <h2 class="contacta__titulo">¿TE GUSTAN NUESTROS PROYECTOS?</h2>
+               <div class="contacta__contenedor">
+                <video width="50%" height="" autoplay loop muted>
+                    <source src="video/gifServicios.mp4"  type="video/mp4">
+                   </video>
+                <div class="contacta__contenedorInfo">
+                    <p class="contacta__contenedor">Si te han gustado nuetros proyectos y quieres que te ayude a crear el tuyo con todo lo que tengas en mente, rellena el formulario </p>
+                    <p><a href="sobreMi.html#formulario" class="sobre__contenedorBoton">Contáctame</a></p>
+                </div>
+               </div>
+              
+
+
+
+            </section>
+
+
+
+
+
+
+        </main>
+
+
+
+
+
+              <!--empieza la seccion Pie de página-->
+        <footer class="footer">
+            <div class="footer__contenedorPaginas">
+            <ul class="footer__contenedorLista">
+                <li class="footer__contenedorElemento">Aviso Legal</li>
+                <li class="footer__contenedorElemento">Politica de Privacidad</li>
+                <li class="footer__contenedorElemento"><a href="sobreMi.html" class="footer__contenedorElemento--link">Contáctanos</a></li>
+            </ul>
+            </div>
+            <div class="footer__contenedorIconos">
+            <ul class="footer__contenedorLista footer__contenedorLista--iconos">
+                <li class="footer__contenedorElemento"><i class="fa-brands fa-facebook"></i></li>
+                <li class="footer__contenedorElemento"><i class="fa-brands fa-twitter"></i></li>
+                <li class="footer__contenedorElemento"><i class="fa-brands fa-instagram"></i></li>
+                <li class="footer__contenedorElemento"><i class="fa-brands fa-square-github"></i></li>
+            </ul>
+            </div>
+        </footer>
+        
+    </body>
+</html>

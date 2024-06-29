@@ -1,0 +1,357 @@
+@font-face {  /*para añadir nuestra fuente, cambiar la tipografia*/
+    font-family: mifuente;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+:root{
+    /*colores exportados*/ /*nuestra paleta de colores*/
+--rosa: #EE0270;
+--morado: #ec71f7;
+--verde: #6EF237;
+--verdeOscuro: #15E822;
+--agua: aqua;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: mifuente;
+   
+}
+.header{
+    width: 100%;
+    height: 10rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../images/fondoNegro.png); /*para añadirt la imagen de fondo */
+    background-position: bottom; /* para que nuestra imagen se quede abajo para que aparezcan los tres colores de mi paleta en la pantalla*/
+    background-repeat: no-repeat; /* para que nuestra imagen no se repita */
+    background-size: cover; /* para decir que la imagen de fondo cubra todo el contenido*/
+    background-attachment: fixed; /*para fijar su posicion*/
+}
+.header__nav{
+    height: 10rem;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 1rem 0 0;
+    top: 0;
+}
+.header__navLista{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.header__navImgen{
+    width: 30rem;
+    top: 0;
+}
+.header__navImgen:hover{
+    transform: scale(1.2);
+}
+.header__navLink{
+    text-decoration: none;
+    color: var(--rosa);
+    font-size: 2rem;
+}
+.header__navLink:hover{
+    text-decoration: none;
+    color: var(--morado);
+    font-size: 2rem;
+}
+.header__oculto{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width:768px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__navImgen{
+        width: 14rem;
+    }
+    .header__navLista {
+        display: none;
+    }
+    .header__oculto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+    }
+    .header__ocultoIcono--ocultar{
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--verde);
+        padding: 1rem;
+    }
+   .header__ocultoLista{
+    display: none;
+    list-style: none;
+    color: var(--verde);
+    gap: 2rem;
+    padding: 2rem;
+}
+.ver{
+    display: flex
+   }
+}
+.header__ocultoLink{
+    text-decoration: none;
+    color: var(--verde);
+}
+
+/* comienza el main*/
+.pagina{
+    width: 100%;
+    background-color: var(--verde);
+
+}
+.pagina__flecha{
+    width: 8rem;
+    height: 8rem;
+    position: fixed;
+    right: 0;
+    bottom: -1rem ; 
+    z-index: 2; /*para que al pasar por encima de las flechas de scroll se pueda ver*/
+}
+@media screen and (max-width:768px) {
+    .pagina__flecha{
+        width: 6rem;
+        height: 6rem;
+        right: -1.2rem;
+        z-index: 2; /*para que al pasar por encima de las flechas de scroll se pueda ver*/
+    }
+}
+/*empieza seccion imagenes de proyectos*/
+.proyecto{
+    width: 100%;
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+   "i j";
+}
+.proyecto__imagenes{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas:
+    "a b "
+    "c d "
+    "e f "
+    "g h ";
+    margin: 4rem;
+    gap: 1.2rem;
+}
+.proyecto__contededor--img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--rosa);
+}
+.proyecto__contededor--img:hover{
+    transform: scale(1.1);
+}
+.proyecto__imagenRincones{
+    grid-area: a;
+}
+.proyecto__imagenAcordeon{
+    grid-area: b;
+}
+.proyecto__imagenHotel{
+    grid-area: c;
+}
+.proyecto__imagenIturri{
+    grid-area: d;
+}
+.proyecto__imagenJunior{
+    grid-area: e;
+}
+.proyecto__imagenLigthbox{
+    grid-area: f;
+}
+.proyecto__imagenPestañas{
+    grid-area: g;
+}
+.proyecto__imagenViajes{
+    grid-area: h;
+}
+.proyecto__contednedorTexto{
+    grid-area: j ;
+    width: 100%;
+}
+.proyecto__contednedorDatos{
+    position: absolute;
+    text-align: center;
+    margin: 7rem 2rem 7rem 1rem;
+    font-size: 2.5rem;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    background-color: var(--morado);
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--rosa);
+    z-index: 1;
+}
+.proyecto__contednedorDatos--visible{
+    grid-area: j;
+    text-align: center;
+    margin: 12rem 2rem 8rem 1rem;
+    font-size: 2.5rem;
+    background-color: var(--morado);
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--rosa);
+    display: block;
+    animation: rebote 3s ease-in-out infinite;
+}
+@media screen and (max-width:768px) {
+    .proyecto{
+        display: flex;
+        flex-direction: column;
+    }
+    .proyecto__contednedorDatos--visible{
+        display: none;
+    }
+    .proyecto__contednedorTexto{
+        position: absolute;
+    }
+}
+    
+
+@keyframes rebote {
+
+    0%,100%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+
+    
+}
+.proyecto__boton{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.proyecto__contenedorCruz{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: var(--rosa);
+}
+.proyecto__contednedorBoton{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    color: var(--verde);
+}
+.proyecto__contednedorLogo{
+box-shadow: 0.5rem 0.5rem 0.5rem var(--rosa);
+border-radius: 1rem;
+}
+.proyecto__contednedorLogo:hover{
+    transform: scale(1.1);
+}
+/*empieza la seccion contacto*/
+.contacta{
+    display: flex;
+    align-items: center;
+}
+.contacta__titulo{
+    margin: 0 0 0 5rem;
+    font-size: 5rem;
+}
+.contacta__contenedor{
+    display: flex;
+    gap: 2rem;
+    margin: 3rem;
+}
+.contacta__contenedorInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sobre__contenedorBoton{
+    background-color: var(--rosa);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: var(--verde);
+}
+.sobre__contenedorBoton:hover{
+    color: var(--verde);
+    background-color: black;
+}
+@media screen and (max-width:768px) {
+    .contacta{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacta__titulo{
+        font-size: 2rem;
+    }
+    .contacta__contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*empieza la seccion footer*/
+.footer{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../images/fondoNegro.png); /*para añadirt la imagen de fondo */
+    background-position: bottom; /* para que nuestra imagen se quede abajo para que aparezcan los tres colores de mi paleta en la pantalla*/
+    background-repeat: no-repeat; /* para que nuestra imagen no se repita */
+    background-size: cover; /* para decir que la imagen de fondo cubra todo el contenido*/
+    background-attachment: fixed; /*para fijar su posicion*/
+}
+.footer__contenedorLista{
+    margin: 1rem;
+    list-style: none;
+    gap: 2rem;
+    
+}
+.footer__contenedorLista--iconos{
+    margin: 1rem 7rem;
+    display: flex;
+    font-size: 3rem;
+}
+.footer__contenedorElemento{
+    color: var(--verde);
+}
+.footer__contenedorElemento:hover{
+    color: var(--rosa);
+}
+.footer__contenedorElemento--link{
+    text-decoration: none;
+    color: var(--verde);
+}
+.footer__contenedorElemento--link:hover{
+    text-decoration: none;
+    color: var(--rosa);
+}
+@media screen and (max-width:768px) {
+    .footer{
+        display: grid;
+        padding: 0;
+    }
+    .footer__contenedorLista{
+        margin: 1rem;
+        list-style: none;
+        gap: 2rem;
+        text-align: center;
+    }
+    .proyecto__contenedorPestañas{
+        font-size: 1rem;
+    }
+}

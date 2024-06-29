@@ -1,0 +1,406 @@
+@font-face {  /*para añadir nuestra fuente, cambiar la tipografia*/
+    font-family: mifuente;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+:root{
+    /*colores exportados*/ /*nuestra paleta de colores*/
+--rosa: #EE0270;
+--morado: #ec71f7;
+--verde: #6EF237;
+--verdeOscuro: #15E822;
+--agua: aqua;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: mifuente;
+}
+.header{
+    width: 100%;
+    height: 10rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../images/fondoNegro.png); /*para añadirt la imagen de fondo */
+    background-position: bottom; /* para que nuestra imagen se quede abajo para que aparezcan los tres colores de mi paleta en la pantalla*/
+    background-repeat: no-repeat; /* para que nuestra imagen no se repita */
+    background-size: cover; /* para decir que la imagen de fondo cubra todo el contenido*/
+    background-attachment: fixed; /*para fijar su posicion*/
+}
+.header__nav{
+    height: 10rem;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 1rem 0 0;
+    top: 0;
+}
+.header__navLista{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.header__navImgen{
+    width: 30rem;
+    top: 0;
+}
+.header__navImgen:hover{
+    transform: scale(1.2);
+}
+.header__navLink{
+    text-decoration: none;
+    color: var(--rosa);
+    font-size: 2rem;
+}
+.header__navLink:hover{
+    text-decoration: none;
+    color: var(--morado);
+    font-size: 2rem;
+}
+.header__oculto{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width:768px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__navImgen{
+        width: 14rem;
+    }
+    .header__navLista {
+        display: none;
+    }
+    .header__oculto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+    }
+    .header__ocultoIcono--ocultar{
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--verde);
+        padding: 1rem;
+    }
+   .header__ocultoLista{
+    display: none;
+    list-style: none;
+    color: var(--verde);
+    gap: 2rem;
+    padding: 2rem;
+}
+.ver{
+    display: flex
+   }
+
+   .header__ocultoLink{
+    text-decoration: none;
+    color: var(--verde);
+}
+}
+
+
+/* comienza el main*/
+.pagina{
+    background-color: var(--rosa);
+}
+.pagina__flecha{
+    width: 8rem;
+    height: 8rem;
+    position: fixed;
+    right: 0;
+    bottom: -1rem ; 
+    z-index: 2; /*para que al pasar por encima de las flechas de scroll se pueda ver*/
+}
+@media screen and (max-width:768px) {
+    .pagina__flecha{
+        width: 6rem;
+        height: 6rem;
+        right: -1.2rem;
+        z-index: 2; /*para que al pasar por encima de las flechas de scroll se pueda ver*/
+    }
+}
+/*empieza la seccion sobremi*/
+.sobremi{
+    display: flex;
+}
+
+.sobremi__contenedor{
+    display: flex;
+    padding: 3rem;
+
+}
+.sobre__contenedorTitulo{
+    width: 30%;
+    font-size: 5rem;
+    padding: 0 1rem 0 0 ;
+}
+.sobremi__contenedorTexto{
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem 0 0 ;
+    animation: parpadeo 1s ease-in-out ;
+}
+@media screen and (max-width:768px) {
+    .sobremi__contenedor{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .sobre__contenedorTitulo{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .sobremi__contenedorTexto{
+        background-color: rgb(234, 196, 234);
+        border-radius: 2rem;
+        padding: 0.2rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
+
+    }
+    
+}
+@keyframes parpadeo {
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*empieza la seccion Imagenes*/
+.imagenes{
+    position: relative;
+    margin: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.imagenes__contenedor{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    margin: 0;
+    padding: 1rem;
+    scroll-behavior: smooth;
+    gap: 1rem;
+}
+.imagenes__contenedorImg{
+    height: 100%;
+    flex: 1 0 50%;
+    border-radius: 20rem;
+    box-shadow: 0.5rem 0.5rem 1rem var(--verde);
+}
+.imagenes__contenedorBoton{
+    font-size: 5rem;
+    z-index: 1;/*para que la flecha quede por encima de las imagenes*/
+    margin-right: -3rem;
+    text-shadow: 0.5rem 0.5rem 1rem var(--verde);
+}
+@media screen and (max-width:768px) {
+    .imagenes{
+        width: 80%;
+        height: 30rem;
+        display: block;
+
+    }
+    .imagenes__contenedor{
+        width: 90%;
+        height: 10rem;
+
+    }
+    .imagenes__contenedorImg{
+        width: 15rem;
+        height:10rem;
+    }
+    .imagenes__contenedorBoton{
+        margin: 0;
+    }
+}
+
+/*empieza la seccion estudios y habilidades*/
+.estudios{
+    padding: 3rem;
+}
+.estudios__contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.estudios__contenedorInfo{
+    width: 70%;
+}
+.estudios__contenedorIconos{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.estudios__iconosItems{
+    width: 4rem;
+    height: 4rem;
+    padding: 2rem;
+}
+
+.estudios__contenedorPorcentaje{
+    width: 15rem;
+    height: 15rem;
+}
+.estudios__contenedorTexto{
+    margin: 1rem 0 2rem 0;
+    background-color: rgb(234, 196, 234);
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+@media screen and (max-width:768px) {
+    .estudios{
+       text-align: center;
+        padding: 1rem;
+    }
+    .estudios__contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .estudios__contenedorPorcentaje{
+        width: 10rem;
+        height: 10rem;
+    }
+    .estudios__contenedorInfo{
+        width: 100%;
+    }
+    .estudios__contenedorIconos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .estudios__iconosItems{
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+    }
+    .sobre__contenedorTitulo{
+
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/*empieza seccion formulario*/
+.contactame{
+    display: flex;
+    flex-direction: column;
+}
+.contactame__contenedor{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.contactame__formulario{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    gap: 0.2rem;
+    background-color: var(--morado);
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 0.2rem solid black;
+    color: var(--verde);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.contactame__formularioBoton{
+    border: none;
+    width: 5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: var(--verde);
+}
+.contactame__formularioBoton:hover{
+    background-color: black;
+    color: var(--morado);
+}
+.contactame__contenedorBoton{
+    padding: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+}
+.contactame__formularioTexto{ /*para que el area de texto no se pueda hacer grande  OBLIGADO SIEMPRE*/
+    resize: none; /* nos deja poner tambien vertical asi solo nos deja cambiar tamaño en vertical*/
+    border-radius: 1rem;
+}
+.contactame__formularioInput{
+    border-radius: 1rem;
+}
+@media screen and (max-width:768px) {
+    .contactame__contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 1rem;
+    }
+    .contactame__formulario{
+        width: 90%;
+        margin: 0;
+    }
+}
+/*empieza la seccion footer*/
+.footer{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../images/fondoNegro.png); /*para añadirt la imagen de fondo */
+    background-position: bottom; /* para que nuestra imagen se quede abajo para que aparezcan los tres colores de mi paleta en la pantalla*/
+    background-repeat: no-repeat; /* para que nuestra imagen no se repita */
+    background-size: cover; /* para decir que la imagen de fondo cubra todo el contenido*/
+    background-attachment: fixed; /*para fijar su posicion*/
+}
+.footer__contenedorLista{
+    margin: 1rem;
+    list-style: none;
+    gap: 2rem;
+    
+}
+.footer__contenedorLista--iconos{
+    margin: 1rem 7rem;
+    display: flex;
+    font-size: 3rem;
+}
+.footer__contenedorElemento{
+    color: var(--rosa);
+}
+.footer__contenedorElemento:hover{
+    color: var(--morado);
+}
+.footer__contenedorElemento--link{
+    text-decoration: none;
+    color: var(--rosa);
+}
+.footer__contenedorElemento--link:hover{
+    text-decoration: none;
+    color: var(--rosa);
+}
+@media screen and (max-width:768px) {
+    .footer{
+        display: grid;
+        padding: 0;
+    }
+    .footer__contenedorLista{
+        margin: 1rem;
+        list-style: none;
+        gap: 2rem;
+        text-align: center;
+    }
+}

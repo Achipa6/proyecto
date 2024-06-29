@@ -1,0 +1,112 @@
+@font-face {  /*para añadir nuestra fuente, cambiar la tipografia*/
+    font-family: mifuente;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+:root{
+    /*colores exportados*/ /*nuestra paleta de colores*/
+--rosa: #EE0270;
+--morado: #ec71f7;
+--verde: #6EF237;
+--verdeOscuro: #15E822;
+--agua: aqua;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../images/fondoNegro.png); /*para añadirt la imagen de fondo */
+    background-position: center; /* para que nuestra imagen se quede centrada en la pantalla*/
+    background-repeat: no-repeat; /* para que nuestra imagen no se repita */
+    background-size: cover; /* para decir que la imagen de fondo cubra todo el contenido*/
+    background-attachment: fixed; /*para fijar su posicion*/
+}
+
+.header__navegador{
+    display: flex;
+}
+.header__logo{
+    width: 15rem;
+    height: 15rem;
+}
+.header__navegadorLista{
+    width: 80%; /* ponemos este ancho para que el area de las bolas ocupe el 80% de ancho la pantalla*/
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+@media screen and (max-width:768px) {
+    .header__navegador{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        padding: 0;
+    }
+
+    .header__navegadorElemento-verde{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .header__logo{
+        margin: 1rem;
+        width: 8rem;
+        height: 8rem;    
+    }
+}
+.header__navegadorBolas{
+    width: 14rem;
+    height: 14rem;
+    transition-duration: 1s;
+}
+.header__navegadorBolas:hover{
+    transform: scale(1.2);
+}
+.header__navegadorElemento-rosa{
+    animation: abajo 1s;
+}
+.header__navegadorElemento-verde{
+    align-self: flex-end;
+    animation: entra 1s ;
+}
+.header__navegadorElemento-morado{
+    align-self: center;
+    animation: lateral 1s;
+}
+@keyframes abajo {
+    from{
+        opacity: 0;
+        transform: translateY(-205rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes lateral {
+    from{
+        opacity: 0;
+        transform: translateX(-205rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes entra {
+    from{
+        opacity: 0;
+        transform: translateY(-215rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

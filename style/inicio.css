@@ -1,0 +1,442 @@
+@font-face {  /*para añadir nuestra fuente, cambiar la tipografia*/
+    font-family: mifuente;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+:root{
+    /*colores exportados*/ /*nuestra paleta de colores*/
+--rosa: #EE0270;
+--morado: #ec71f7;
+--verde: #6EF237;
+--verdeOscuro: #15E822;
+--agua: aqua;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: mifuente;
+   
+}
+.header{
+    width: 100%;
+    height: 10rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../images/fondoNegro.png); /*para añadirt la imagen de fondo */
+    background-position: bottom; /* para que nuestra imagen se quede abajo para que aparezcan los tres colores de mi paleta en la pantalla*/
+    background-repeat: no-repeat; /* para que nuestra imagen no se repita */
+    background-size: cover; /* para decir que la imagen de fondo cubra todo el contenido*/
+    background-attachment: fixed; /*para fijar su posicion*/
+}
+.header__nav{
+    height: 10rem;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 1rem 0 0;
+    top: 0;
+}
+.header__navLista{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.header__navImgen{
+    width: 30rem;
+    top: 0;
+}
+.header__navImgen:hover{
+    transform: scale(1.2);
+}
+.header__navLink{
+    text-decoration: none;
+    color: var(--rosa);
+    font-size: 2rem;
+}
+.header__navLink:hover{
+    text-decoration: none;
+    color: var(--morado);
+    font-size: 2rem;
+}
+.header__oculto{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width:768px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__navImgen{
+        width: 14rem;
+    }
+    .header__navLista {
+        display: none;
+    }
+    .header__oculto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+    }
+    .header__ocultoIcono--ocultar{
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--verde);
+        padding: 1rem;
+    }
+   .header__ocultoLista{
+    display: none;
+    list-style: none;
+    color: var(--verde);
+    gap: 2rem;
+    padding: 2rem;
+}
+.header__ocultoLink{
+    text-decoration: none;
+    color: var(--verde);
+}
+.ver{
+    display: flex
+   }
+}
+
+/* comienza el main*/
+.pagina{
+    background-color: var(--morado);
+}
+
+.pagina__flecha{
+    width: 8rem;
+    height: 8rem;
+    position: fixed;
+    right: 0;
+    bottom: -1rem ; 
+    z-index: 2; /*para que al pasar por encima de los elementos se pueda ver*/
+}
+@media screen and (max-width:768px) {
+    .pagina__flecha{
+        width: 6rem;
+        height: 6rem;
+        right: -1.2rem;
+        z-index: 2; /*para que al pasar por encima de los elementos se pueda ver*/
+    }
+}
+/*comienza la sección de descripción*/
+
+.descripcion{
+    display: flex;
+    padding: 3rem;
+}
+.descripcion__contenedorTitulo{
+    width: 30%;
+    font-size: 5rem;
+}
+.descripcion__contenedor{
+    width: 60%;
+    display: flex;
+    align-items: center;
+
+}
+.descripcion__contenedorTexto {
+    font-size: 1rem;
+    margin: 2rem;
+    animation: parpadeo 1s ease-in-out;
+    
+}
+@media screen and (max-width:768px) {
+    .descripcion{
+        display: grid;
+    }
+    .descripcion__contenedorTitulo{
+        font-size: 2rem;
+        margin: 0;
+    }
+    .descripcion__contenedor{
+        width: 100%;
+        display: grid;
+    }
+    .descripcion__contenedorTexto {
+        font-size: 1rem;
+        animation: parpadeo 1s ease-in-out;
+        margin: 0;
+    }
+}
+@keyframes parpadeo {
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*empeza la sección cards*/
+.card{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--rosa);
+    border: 0.2rem solid black;
+    box-shadow: 0.5rem 0.5rem 1rem var(--verde);
+    margin: 2rem;
+    border-radius: 2rem;
+}
+.card__contenedor{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.2rem solid var(--verde);
+    border-radius: 2rem;
+    margin: 1rem;
+}
+.card__contenedorIcono{
+    font-size: 10rem;
+    color: var(--verdeOscuro);
+    margin: 0.5rem;
+}
+.card__contenedorTitulo{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.card__contenedorTexto{
+    font-size: 1rem;
+    margin: 1rem 2rem;
+    background-color: rgb(234, 196, 234) ;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+@media screen and (max-width:768px) {
+    .card{
+        display: grid;
+    }
+    .card__contenedor{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0.2rem solid var(--verde);
+        border-radius: 2rem;
+ 
+    }
+    .card__contenedorIcono{
+        font-size: 3rem;
+        color: var(--verdeOscuro);
+        margin: 0.5rem;
+    }
+    .card__contenedorTitulo{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .card__contenedorTexto{
+        background-color: rgb(234, 196, 234) ;
+    }
+}
+empieza la seccion Sobre mí
+.sobre{
+    height: 30%;
+   
+}
+.sobre__contenedor{
+    margin: 2rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+
+}
+.sobre__contenedorTitulo{
+    width: 30%;
+    font-size: 5rem;
+    padding: 2rem 0;
+
+}
+.sobre__contenedorExplicacion{
+    width: 70%;
+    display: flex;
+    gap: 2rem;
+}
+.sobre__contenedorDescripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobre__contenedorTexto{
+    padding: 3rem;
+}
+.sobre__contenedorBoton{
+    background-color: var(--rosa);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: var(--verde);
+}
+.sobre__contenedorBoton:hover{
+    color: var(--verde);
+    background-color: black;
+}
+.sobre__contenedorIagen{
+    width: 25rem;
+    height: 30rem;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 1rem var(--verde);
+}
+@media screen and (max-width:768px) {
+   .sobre__contenedor{
+        display: grid;
+        margin: 2rem;
+        gap:0;
+   }
+    .sobre__contenedorExplicacion{
+        width: 100%;
+        display: grid;
+    }
+    .sobre__contenedorTexto{
+        width: 100%;
+        padding: 0;
+    }
+    .sobre__contenedorTitulo{
+        font-size: 2rem;
+        margin: 0;
+    }
+    .sobre__contenedorIagen{
+        width: 20rem;
+        height: 15rem;
+    }
+
+}
+/*empieza seccion proyectos*/
+.proyectos{
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.Proyectos__titulo{
+    width: 50%;
+    font-size: 5rem;
+}
+
+.proyectos__contenedor{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: var(--rosa);
+    border: 0.2rem solid black;
+    box-shadow: 0.5rem 0.5rem 1rem var(--verde);
+    border-radius: 2rem;
+    padding: 1rem;
+    
+}
+.proyectos__contenedorCard{
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    overflow: hidden;
+    border: 0.1rem solid black;
+    box-shadow: 0 0.25rem 0.5rem var(--verde);
+    transition: transform 0.5s;
+    border-radius: 2rem;
+}
+.proyectos__contenedorImagen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s;
+    align-items: center;
+}
+.proyectos__contenedorDescripcion{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--verde);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.proyectos__contenedorTitulo{
+    color: black;
+    text-decoration: none;
+}
+.boton__proyectos{
+    background-color: var(--verde);
+    color: black;
+}
+.boton__proyectos:hover{
+    background-color: black;
+    color: var(--verde);
+}
+.sobre__contenedorConoceme{
+    margin: 1rem 20rem;
+}
+@media screen and (max-width:768px) {
+    .proyectos{
+        display: grid;
+    }
+    .Proyectos__titulo{
+        font-size: 2rem;
+        margin: 0;
+    }
+    .proyectos__contenedor{
+        width: 70%;
+    }
+    .sobre__contenedorConoceme{
+        margin: 1rem;
+    }
+}
+/*empieza la seccion footer*/
+.footer{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../images/fondoNegro.png); /*para añadirt la imagen de fondo */
+    background-position: bottom; /* para que nuestra imagen se quede abajo para que aparezcan los tres colores de mi paleta en la pantalla*/
+    background-repeat: no-repeat; /* para que nuestra imagen no se repita */
+    background-size: cover; /* para decir que la imagen de fondo cubra todo el contenido*/
+    background-attachment: fixed; /*para fijar su posicion*/
+}
+.footer__contenedorLista{
+    margin: 1rem;
+    list-style: none;
+    gap: 2rem;
+    
+}
+.footer__contenedorLista--iconos{
+    margin: 1rem 7rem;
+    display: flex;
+    font-size: 3rem;
+}
+.footer__contenedorElemento{
+    color: var(--morado);
+}
+.footer__contenedorElemento:hover{
+    color: var(--verde);
+}
+.footer__contenedorElemento--link{
+    text-decoration: none;
+    color: var(--morado);
+}
+.footer__contenedorElemento--link:hover{
+    text-decoration: none;
+    color: var(--verde);
+}
+@media screen and (max-width:768px) {
+    .footer{
+        display: grid;
+        padding: 0;
+    }
+    .footer__contenedorLista{
+        margin: 1rem;
+        list-style: none;
+        gap: 2rem;
+        text-align: center;
+    }
+}
