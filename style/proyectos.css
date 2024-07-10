@@ -119,9 +119,9 @@ body{
 }
 @media screen and (max-width:768px) {
     .pagina__flecha{
-        width: 6rem;
-        height: 6rem;
-        right: -1.2rem;
+        width: 5rem;
+        height: 5rem;
+        right: -1rem;
         z-index: 2; /*para que al pasar por encima de las flechas de scroll se pueda ver*/
     }
 }
@@ -209,6 +209,9 @@ body{
     display: block;
     animation: rebote 3s ease-in-out infinite;
 }
+.proyecto__texto{
+    display: none;
+}
 @media screen and (max-width:768px) {
     .proyecto{
         display: flex;
@@ -220,6 +223,27 @@ body{
     .proyecto__contednedorTexto{
         position: absolute;
     }
+    .proyecto__boton {
+        transform: opacity ;
+        animation: parpadeo 2s infinite;
+    }
+    @keyframes parpadeo {
+        0%{
+          
+           scale: 0.8;
+        }
+        1000%{
+
+            scale: 1;
+         }
+    }
+    .proyecto__texto{
+        text-align: center;
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
+        display: flex;   
+    }
+    
 }
     
 
@@ -271,6 +295,7 @@ border-radius: 1rem;
     display: flex;
     gap: 2rem;
     margin: 3rem;
+    font-size: 1.7rem;
 }
 .contacta__contenedorInfo{
     display: flex;
@@ -301,6 +326,7 @@ border-radius: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 1rem;
     }
 }
 

@@ -38,138 +38,161 @@
         </div>
       </header>
     <!--empieza la seccion sobre mí-->
+
       <main class="pagina">
         <a href="sobreMi.html"><img src="images/flechaFondoRosa.png" alt="Flecha" class="pagina__flecha"></a>
+<!--El siguiente codigo  crea una sección con información sobre mi. La sección incluye una breve introducción 
+sobre la experiencia de Aroa como diseñadora web a través de la codificación. Hay un enlace "Leer más..." que revela
+información adicional. El enlace "Leer menos..." permite al usuario ocultar la información adicional si ellos eligen hacerlo. -->
         <section class="sobremi">
             <div class="sobremi__contenedor">
                 <h2 class="sobre__contenedorTitulo">SOBRE MÍ</h2>
-                <p class="sobremi__contenedorTexto">              
-                    Soy Aroa, una apasionada diseñadora web con una visión vibrante.
-                    Mi viaje en el mundo del diseño comenzó a los 36 años, y desde
-                    entonces, cada línea de código es una oportunidad de crear magia
-                    digital. Con una mezcla única de creatividad y destreza técnica, mi
-                    objetivo es fusionar la estética con la funcionalidad en cada
-                    proyecto. Mi pasión me impulsa a explorar nuevas posibilidades y
-                    aportar una perspectiva fresca a cada desafío. Cuando no estoy
-                    inmersa en el mundo digital, puedes encontrarme buscando inspiración
-                    en la naturaleza. Convierto ideas en experiencias
-                    visuales impactantes, trascendiendo la pantalla y dejando huella en
-                    cada pixel.
-                </p>
-                <p class="sobremi__contenedorTexto">              
-                    
-                    Aunque suene extraño, estudié mecánica industrial y mecánica aeronáutica,  
-                    me he dedicado toda mi vida profesional al tema de la mecánica, hasta hace 
-                    un tiempo me dediqué a reparar helicópteros y a la mecánica en general, es 
-                    un mundo muy apasionante, pero tenía una espinita. 
-                    Ahora he descubierto un mundo lleno de código que ya empieza a tener sentido. 
-                    Nunca me había dedicado al mundo del diseño web y he descubierto que es un mundo 
-                    fantástico lleno de posibilidades que dejan volar mi imaginación. Desde siempre 
-                    era una cosa que me atraía y tenía en mente hacer alguna vez. Cuando te adentras 
-                    en este  mundo, descubres toda la magia que se esconde en el back-end.
-                </p>
-            </div>
-        </section>
-    <!--empieza la seccion imagenes-->
-        <section class="imagenes">
-            <p class="imagenes__contenedorBoton" id="botonAtrasa">&leftarrow;</p>
-            <div class="imagenes__contenedor">
-                <img src="images/imagenesSobremi/bloques.jpg" alt="Bloques" class="imagenes__contenedorImg" id="imagen">
-            </div>
-            <p class="imagenes__contenedorBoton imagenes__contenedorBoton--derecha" id="botolonAdelanta">&rightarrow;</p>
-        </section>
-    <!--empieza la seccion estudios y habilidades-->
-        <section class="estudios">
-            <div class="estudios__contenedor">
-                <h2 class="sobre__contenedorTitulo">ESTUDIOS</h2>
-                <div class="estudios__contenedorInfo">
-                    <div class="estudios__contenedorBarras">
-                        <img src="images/imagenesSobremi/barraResolucion.png" alt="barraResolucion" class="estudios__contenedorPorcentaje">
-                        <img src="images/imagenesSobremi/barraProactividad.png" alt="Proactividad" class="estudios__contenedorPorcentaje">
-                        <img src="images/imagenesSobremi/barraComunincacion.png" alt="Comunicación" class="estudios__contenedorPorcentaje">
-                        <img src="images/imagenesSobremi/barraEquipo.png" alt="Equipo" class="estudios__contenedorPorcentaje">
-                    </div>
-                    <p class="estudios__contenedorTexto">              
-                        A parte de los estudios ya mencionados, he cursado un BootCamp en el centro de Estudios 
-                        de Innovación, Diseño y Marqueting-CEI, realizando módulos sobre diseño con WordPress,
-                        diseño web con Html5, CSS y JavaScript, UX/UI y FullStack.
-                        Usando programas como Figma, Visual Code Estudio, WordPress, Canvas, entre otros. Puedo 
-                        crear web impresionantes con la idea que tengas en mente.
+                <div class="sobremi__contenedorMas">
+                    <p class="sobremi__contenedorTexto">              
+                        Soy Aroa, una apasionada diseñadora web con una visión vibrante.
+                        Mi viaje en el mundo del diseño comenzó a los 36 años, y desde
+                        entonces, cada línea de código es una oportunidad de crear magia
+                        digital. Con una mezcla única de creatividad y destreza técnica, mi
+                        objetivo es fusionar la estética con la funcionalidad en cada
+                        proyecto. Mi pasión me impulsa a explorar nuevas posibilidades y
+                        aportar una perspectiva fresca a cada desafío. Cuando no estoy
+                        inmersa en el mundo digital, puedes encontrarme buscando inspiración
+                        en la naturaleza. Convierto ideas en experiencias
+                        visuales impactantes, trascendiendo la pantalla y dejando huella en
+                        cada pixel.
                     </p>
-                    <div class="estudios__contenedorIconos">
-                        <img src="images/imagenesSobremi/174881.png" alt="WordPress" class="estudios__iconosItems">
-                        <img src="images/imagenesSobremi/figma.png" alt="Figma" class="estudios__iconosItems">
-                        <img src="images/imagenesSobremi/visual.png" alt="Visual" class="estudios__iconosItems">
-                        <img src="images/imagenesSobremi/google.png" alt="Google" class="estudios__iconosItems">
-                        <img src="images/imagenesSobremi/red.png" alt="redes" class="estudios__iconosItems">
+                    <a href="#" class="sobremi__contenedorLeer" id="leer">Leer más...</a>
+                </div>     
+                <div class="sobremi__contenedorMas sobremi__contenedorTexto-oculto" id="textoMas" >
+                    <p class="sobremi__contenedorTexto" >              
+                    
+                        Aunque suene extraño, estudié mecánica industrial y mecánica aeronáutica,  
+                        me he dedicado toda mi vida profesional al tema de la mecánica, hasta hace 
+                        un tiempo me dediqué a reparar helicópteros y a la mecánica en general, es 
+                        un mundo muy apasionante, pero tenía una espinita. 
+                        Ahora he descubierto un mundo lleno de código que ya empieza a tener sentido. 
+                        Nunca me había dedicado al mundo del diseño web y he descubierto que es un mundo 
+                        fantástico lleno de posibilidades que dejan volar mi imaginación. Desde siempre 
+                        era una cosa que me atraía y tenía en mente hacer alguna vez. Cuando te adentras 
+                        en este  mundo, descubres toda la magia que se esconde en el back-end.
+                    </p>
+                    <p class="sobremi__contenedorBoton"><a href="#" class="sobremi__contenedorLeer" id="leerMenos">Leer menos...</a></p>
+                </div> 
+              
+            </div>
+        </section>
+<!--empieza la seccion imagenes-->
+<!--Con el codigo dsighiente creamos un p que usaremos como flecha hacia adelante y otro p quew usaremos como flecha hacia detras y tambien
+incluimos un div en el que insertasremos unas imagenes mediante JavaScript. Creamos un carrusel de imagenes-->
+    <section class="imagenes">
+        <p class="imagenes__contenedorBoton" id="botonAtrasa">&leftarrow;</p>
+        <div class="imagenes__contenedor">
+            <img src="images/imagenesSobremi/bloques.jpg" alt="Bloques" class="imagenes__contenedorImg" id="imagen">
+        </div>
+        <p class="imagenes__contenedorBoton imagenes__contenedorBoton--derecha" id="botolonAdelanta">&rightarrow;</p>
+    </section>
+<!--empieza la seccion estudios y habilidades-->
+<!--El siguiente código es una sección HTML que contiene información sobre mis estudios y habilidades. Él parrafo
+incluye títulos, imágenes, texto que describe la formación académica del usuario y las habilidades adquiridas
+desde un BootCamp e íconos que representan herramientas y tecnologías con las que el usuario está familiarizado. se han insetado unas imagenes para contener
+las habilidades y unas imagenes como iconos de WordPress, Figma, Visual Studio Code, Google y uno que relaciona las redes socialeas-->
+    <section class="estudios">
+        <div class="estudios__contenedor">
+            <h2 class="sobre__contenedorTitulo">ESTUDIOS</h2>
+            <div class="estudios__contenedorInfo">
+                <div class="estudios__contenedorBarras">
+                    <img src="images/imagenesSobremi/barraResolucion.png" alt="barraResolucion" class="estudios__contenedorPorcentaje">
+                    <img src="images/imagenesSobremi/barraProactividad.png" alt="Proactividad" class="estudios__contenedorPorcentaje">
+                    <img src="images/imagenesSobremi/barraComunincacion.png" alt="Comunicación" class="estudios__contenedorPorcentaje">
+                    <img src="images/imagenesSobremi/barraEquipo.png" alt="Equipo" class="estudios__contenedorPorcentaje">
+                </div>
+                <p class="estudios__contenedorTexto">              
+                    A parte de los estudios ya mencionados, he cursado un BootCamp en el centro de Estudios 
+                    de Innovación, Diseño y Marqueting-CEI, realizando módulos sobre diseño con WordPress,
+                    diseño web con Html5, CSS y JavaScript, UX/UI y FullStack.
+                    Usando programas como Figma, Visual Code Estudio, WordPress, Canvas, entre otros. Puedo 
+                    crear web impresionantes con la idea que tengas en mente.
+                </p>
+                <div class="estudios__contenedorIconos">
+                    <img src="images/imagenesSobremi/174881.png" alt="WordPress" class="estudios__iconosItems">
+                    <img src="images/imagenesSobremi/figma.png" alt="Figma" class="estudios__iconosItems">
+                    <img src="images/imagenesSobremi/visual.png" alt="Visual" class="estudios__iconosItems">
+                    <img src="images/imagenesSobremi/google.png" alt="Google" class="estudios__iconosItems">
+                    <img src="images/imagenesSobremi/red.png" alt="redes" class="estudios__iconosItems">
 
-                    </div>
                 </div>
             </div>
-        </section>
-    <!--empieza la seccion contactame-->
-        <section class="contactame">
-            <div class="contactame__contenedor" id="formulario">
-                <h2 class="sobre__contenedorTitulo">CONTACTO</h2>
-                <form name="Formulario de contacto" action="url" method="get" enctype="multipart/form-data" class="contactame__formulario"> <!--nombre del formulario action y method son obligatorias action es la url donde vamos a enviar los datos
-                        metodo que usa para enviar los datos get o post-->
-                    <label for="n1">Nombre:</label>  <!--es para denominar el input que hay bajo-->
-                    <input name="nombre" type="text" id="n1" size="20" required class="contactame__formularioInput"><!--se ve como una caja donde puedo poner lo que quiera-->
-
-                    <label for="n2">Apellidos:</label> <!--con la id relacionamos el input con label-->
-                    <input name="apellidos" type="text" id="n2" size="20" class="contactame__formularioInput">
-
-                    <label for="n3">Teléfono:</label>
-                    <input name="Telefono" type="number" id="n3" size="10" maxlength="7" class="contactame__formularioInput"> <!-- maxlenght para definir los caracteres max -->
-
-                    <label for="n4">Día de contacto:</label>
-                    <input name="nombre" type="date" id="n4" class="contactame__formularioInput">  <!--añade un calendario para selecciona la fecha-->
-
-                    <label>Horario de contacto:</label>
-                    <div class="contactame__contenedorOpciones" >
-                        <input type="radio" name="horario">Mañanas  <!--radio solo deja seleccionar 1-->
-                        <input type="radio" name="horario" >Tardes
-                        <input type="radio" name="horario">Noches
-                        <input type="radio" name="horario">Indiferente
-                    </div>
-                    <label for="n5">Motivo de consulta:</label>
-                    <select name="seccionPagina" id="n5"class="contactame__formularioInput">
-                        <option value="Presupuesto">Presupuesto</option>
-                        <option value="Informacion"selected>Información</option> <!--sale seleccionada por defecto-->
-                        <option value="Dudas">Dudas</option>
-                        <option value="Servicios">Servicios</option>
-                        <option value="otros">Otros</option>
-                    </select>
-                    <label for="n6">Mensaje:</label>
-                    <textarea name="mensaje" cols="60" rows="20" id="n6" class="contactame__formularioTexto" placeholder=" Deja tu mensaje" required></textarea> 
-
-                    <div class="contactame__contenedorBoton"><button type="submit" class="contactame__formularioBoton" id="botonEnviar">Enviar</button> </div>
-                </form>
-            </div>
-
-
-            </div>
-        </section>
-      </main>
-      <!--empieza la seccion Pie de página-->
-      <footer class="footer">
-        <div class="footer__contenedorPaginas">
-          <ul class="footer__contenedorLista">
-            <li class="footer__contenedorElemento">Aviso Legal</li>
-            <li class="footer__contenedorElemento">Política de Privacidad</li>
-            <li class="footer__contenedorElemento"><a href="sobreMi.html" class="footer__contenedorElemento--link">Contáctanos</a></li>
-          </ul>
         </div>
-        <div class="footer__contenedorIconos">
-          <ul class="footer__contenedorLista footer__contenedorLista--iconos">
-            <li class="footer__contenedorElemento"><i class="fa-brands fa-facebook"></i></li>
-            <li class="footer__contenedorElemento"><i class="fa-brands fa-twitter"></i></li>
-            <li class="footer__contenedorElemento"><i class="fa-brands fa-instagram"></i></li>
-            <li class="footer__contenedorElemento"><i class="fa-brands fa-square-github"></i></li>
-          </ul>
+    </section>
+<!--empieza la seccion contactame-->
+
+<!-- El siguiente codigo es un formulario HTML para una sección de contacto. Incluye varios campos de entrada.
+para que el usuario complete, como nombre, apellido, número de teléfono, día de contacto preferido, preferido
+hora de contacto (botones de radio para mañana, tarde, noche o indiferente(solo deja seleccionar uno)), motivo del contacto
+(menú desplegable con opciones como presupuesto, información, dudas, servicios, otros), y un cuadro de mensaje que el usuario puede rellenar.
+El formulario también tiene un botón de envío para que los usuarios envíen su información. -->
+    <section class="contactame">
+        <div class="contactame__contenedor" id="formulario">
+            <h2 class="sobre__contenedorTitulo">CONTACTO</h2>
+            <form name="Formulario de contacto" action="url" method="get" enctype="multipart/form-data" class="contactame__formulario"> <!--nombre del formulario action y method son obligatorias action es la url donde vamos a enviar los datos
+                    metodo que usa para enviar los datos get o post-->
+                <label for="n1">Nombre:</label>  <!--es para denominar el input que hay bajo-->
+                <input name="nombre" type="text" id="n1" size="20" required class="contactame__formularioInput"><!--se ve como una caja donde puedo poner lo que quiera-->
+
+                <label for="n2">Apellidos:</label> <!--con la id relacionamos el input con label-->
+                <input name="apellidos" type="text" id="n2" size="20" class="contactame__formularioInput">
+
+                <label for="n3">Teléfono:</label>
+                <input name="Telefono" type="number" id="n3" size="10" maxlength="7" class="contactame__formularioInput"> <!-- maxlenght para definir los caracteres max -->
+
+                <label for="n4">Día de contacto:</label>
+                <input name="nombre" type="date" id="n4" class="contactame__formularioInput">  <!--añade un calendario para selecciona la fecha-->
+
+                <label>Horario de contacto:</label>
+                <div class="contactame__contenedorOpciones" >
+                    <input type="radio" name="horario">Mañanas  <!--radio solo deja seleccionar 1-->
+                    <input type="radio" name="horario" >Tardes
+                    <input type="radio" name="horario">Noches
+                    <input type="radio" name="horario">Indiferente
+                </div>
+                <label for="n5">Motivo de consulta:</label>
+                <select name="seccionPagina" id="n5"class="contactame__formularioInput">
+                    <option value="Presupuesto">Presupuesto</option>
+                    <option value="Informacion"selected>Información</option> <!--sale seleccionada por defecto-->
+                    <option value="Dudas">Dudas</option>
+                    <option value="Servicios">Servicios</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <label for="n6">Mensaje:</label>
+                <textarea name="mensaje" cols="60" rows="20" id="n6" class="contactame__formularioTexto" placeholder=" Deja tu mensaje" required></textarea> 
+
+                <div class="contactame__contenedorBoton"><button type="submit" class="contactame__formularioBoton" id="botonEnviar">Enviar</button> </div>
+            </form>
         </div>
-      </footer>
-    </body>
-    
-    
-    </html>
+
+
+        </div>
+    </section>
+  </main>
+  <!--empieza la seccion Pie de página-->
+  <footer class="footer">
+    <div class="footer__contenedorPaginas">
+      <ul class="footer__contenedorLista">
+        <li class="footer__contenedorElemento">Aviso Legal</li>
+        <li class="footer__contenedorElemento">Política de Privacidad</li>
+        <li class="footer__contenedorElemento"><a href="sobreMi.html" class="footer__contenedorElemento--link">Contáctanos</a></li>
+      </ul>
+    </div>
+    <div class="footer__contenedorIconos">
+        <ul class="footer__contenedorLista footer__contenedorLista--iconos">
+            <li><a href="https://www.facebook.com/?locale=es_ES" target="_blank" class="footer__contenedorElemento"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/aroa-chiva" target="_blank" class="footer__contenedorElemento"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" class="footer__contenedorElemento"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://github.com/Achipa6" target="_blank"  class="footer__contenedorElemento"><i class="fa-brands fa-square-github"></i></a></li>
+        </ul>
+    </div>
+  </footer>
+</body>
+
+
+</html>

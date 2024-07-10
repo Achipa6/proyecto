@@ -118,9 +118,9 @@ body{
 }
 @media screen and (max-width:768px) {
     .pagina__flecha{
-        width: 6rem;
-        height: 6rem;
-        right: -1.2rem;
+        width: 5rem;
+        height: 5rem;
+        right: -1rem;
         z-index: 2; /*para que al pasar por encima de los elementos se pueda ver*/
     }
 }
@@ -149,6 +149,7 @@ body{
 @media screen and (max-width:768px) {
     .descripcion{
         display: grid;
+        justify-items: center;
     }
     .descripcion__contenedorTitulo{
         font-size: 2rem;
@@ -163,6 +164,7 @@ body{
         animation: parpadeo 1s ease-in-out;
         margin: 0;
     }
+
 }
 @keyframes parpadeo {
     0%{
@@ -287,6 +289,7 @@ empieza la seccion Sobre mí
 @media screen and (max-width:768px) {
    .sobre__contenedor{
         display: grid;
+        justify-items: center;
         margin: 2rem;
         gap:0;
    }
@@ -379,6 +382,7 @@ empieza la seccion Sobre mí
 @media screen and (max-width:768px) {
     .proyectos{
         display: grid;
+       justify-items: center;
     }
     .Proyectos__titulo{
         font-size: 2rem;

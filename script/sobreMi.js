@@ -11,6 +11,25 @@ function handleElementos() {
 
     let menu = document.getElementById('botonMenu');
     menu.addEventListener('click', verMenu)
+
+    let leerMas = document.getElementById('leer')
+    leerMas.addEventListener('click', leer)
+
+    let leerMenos = document.getElementById("leerMenos")
+    leerMenos.addEventListener('click',leerNo)
+}
+function leerNo() {
+    let texto = document.getElementById('textoMas')
+    texto.classList.add('sobremi__contenedorTexto-oculto')
+    let boton = document.getElementById('leer')
+    boton.style.display = 'block'
+   
+}
+function leer() {
+    let texto = document.getElementById('textoMas')
+    texto.classList.remove('sobremi__contenedorTexto-oculto')
+    let boton = document.getElementById('leer')
+    boton.style.display = 'none'
 }
 function verMenu() {
     let menu = document.getElementById('menu');

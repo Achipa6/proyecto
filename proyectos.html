@@ -38,10 +38,15 @@
 
         <main class="pagina">
             <a href="proyectos.html"><img src="images/flechaFondoVerde.png" alt="Flecha" class="pagina__flecha"></a>
-            <!--empieza seccion imagenes de profectos-->
+<!--empieza seccion imagenes de proyectos-->
             <section class="proyecto">
 
-
+   <!-- El código anterior crea una serie de botones con imágenes dentro de un contenedor. Cada botón tiene un
+ ID único, valor y clase asociados con él para poder usarlos en css y javaScript para aportar funcionalidad y estilos. 
+ Al hacer clic en estos botones, se activará una acción relacionada con el proyecto específico representado por la imagen. 
+ El texto "Pincha sobre las imagenes para ver los proyectos" instruye a los usuarios a hacer clic en las imágenes para ver los proyectos
+ en la pantalla adaptada par moviles -->
+                <h2 class="proyecto__texto">Pincha sobre las imagenes para ver los proyectos</h2>
                 <div class="proyecto__imagenes">
                     <button type="button" id="rincones" value="0" class="proyecto__boton"><img src="images/rinconesmMolones.jpg" alt="rinconesmMolones" id="rincones" class="proyecto__imagenRincones proyecto__contededor--img"></button>
                     <button type="button" id="acordeon" value="1" class="proyecto__boton"><img src="images/acordeon.jpg" alt="Acordeón" class="proyecto__imagenAcordeon proyecto__contededor--img"></button>
@@ -54,6 +59,9 @@
                     
                 </div>
 
+        <!--El siguiente codigo es para mostrar los detalles al pulsar en las imagenes anteriores,esta descripcion aparece a modo pestaña en el lateral de la 
+        web y nos da información sobre el proyecto que deseamos ver, nos muestra iconos a redes sociales y tambien un boton con una cruz para poder ocultar
+        la informacion mostrada-->
                 <div class="proyecto__contednedorDatos--visible" id="fondo"> 
                     <h3>ESTOS SON NUESTROS PROYECTOS</h3>
                     <p>¿Quieres ver nuestros proyectos?
@@ -152,7 +160,12 @@
                     </div>
                 </div>
             </section>
-
+<!--Empieza la seccion contacta-->
+<!--El siguiente código crea una sección con un gif y contenido de texto para alentar a los usuarios a completar a pinchar sobre el boton de contactame
+que les reconduce a la pagina  de contacto justo a la parte del formulario para que rellenen el formulario.
+ La sección incluye un título "¿TE GUSTAN NUESTROS PROYECTOS?" y un elemento de video mostrando un archivo de gif "gifServicios.mp4". 
+ Debajo del vídeo hay un párrafo para alentar a los usuarios a completar un formulario si les gustaron los proyectos y desean ayuda para crear sus
+ proyectos. El párrafo que parece un boton incluye un enlace "Contáctame" que dirige a los usuarios al sitio específico de la pagina Sobre mi del archivo HTML ("sobreMi.html") con un id de "formulario". -->
             <section class="contacta">
                <h2 class="contacta__titulo">¿TE GUSTAN NUESTROS PROYECTOS?</h2>
                <div class="contacta__contenedor">
@@ -164,24 +177,9 @@
                     <p><a href="sobreMi.html#formulario" class="sobre__contenedorBoton">Contáctame</a></p>
                 </div>
                </div>
-              
-
-
-
             </section>
-
-
-
-
-
-
         </main>
-
-
-
-
-
-              <!--empieza la seccion Pie de página-->
+<!--empieza la seccion Pie de página-->
         <footer class="footer">
             <div class="footer__contenedorPaginas">
             <ul class="footer__contenedorLista">
@@ -192,10 +190,10 @@
             </div>
             <div class="footer__contenedorIconos">
             <ul class="footer__contenedorLista footer__contenedorLista--iconos">
-                <li class="footer__contenedorElemento"><i class="fa-brands fa-facebook"></i></li>
-                <li class="footer__contenedorElemento"><i class="fa-brands fa-twitter"></i></li>
-                <li class="footer__contenedorElemento"><i class="fa-brands fa-instagram"></i></li>
-                <li class="footer__contenedorElemento"><i class="fa-brands fa-square-github"></i></li>
+                <li><a href="https://www.facebook.com/?locale=es_ES" target="_blank" class="footer__contenedorElemento"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/aroa-chiva" target="_blank" class="footer__contenedorElemento"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" class="footer__contenedorElemento"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://github.com/Achipa6" target="_blank"  class="footer__contenedorElemento"><i class="fa-brands fa-square-github"></i></a></li>
             </ul>
             </div>
         </footer>

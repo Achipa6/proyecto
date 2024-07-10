@@ -20,6 +20,9 @@
 <body>
 <!--empieza la seccion de nuestra cabecera-->
   <header class="header">
+<!-- El siguiente codigo crea una barra de navegación (nav) con una imagen de logotipo (KibukMorado) y una lista de
+enlaces (Sobre mi, Proyectos, Portada) diseñados como elementos de navegación. Cada enlace apunta a un diferente
+Página HTML dentro del sitio web.EL header oculto es para usarlo en la adaptabilidad para el movil-->
     <nav class="header__nav">
       <a href="index.html"><img src="images/kivukMorado.png" alt="KibukMorado" class="header__navImgen"/></a>
       <ul class="header__navLista">
@@ -39,7 +42,10 @@
   </header>
 <!--empieza la seccion Que es Kivuk-->
   <main class="pagina">
+    <!-- este codigo es para insertar la flecha para poder subir desde cualquier punto de la pagina hacia arriba del todo -->
     <a href="inicio.html"><img src="images/flechaFondoMorado.png" alt="Flecha" class="pagina__flecha"></a>
+   <!-- El siguiente codigo es un fragmento de HTML que define una sección con el título "¿QUÉ ES KIVUK?" y un
+ párrafo de texto dentro de un elemento de artículo.. -->
     <section class="descripcion">
       <h2 class="descripcion__contenedorTitulo">¿QUÉ ES KIVUK?</h2>
       <article class="descripcion__contenedor">
@@ -61,8 +67,11 @@
         </p>
       </article>
     </section>
-<!--empieza la seccion Cards-->
-    <section class="card">
+<!-- empieza la seccion Cards-->
+      <!-- El siguiente codigo es un fragmento de HTML que define una sección de Cards y dentro de cada card
+       tenemos un icono de fontawesome, un titulo y un parrafoafo de texto dentro de un elemento div. Hemos 
+       creado 3 cards con su contenido-->
+<section class="card">
       <div class="card__contenedor">
         <p class="card__contenedorIcono"><i class="fa-solid fa-shop-lock"></i></p>
         <h3 class="card__contenedorTitulo">Desarrollo Ecommerce</h3>
@@ -70,12 +79,7 @@
           Es una estrategia esencial para empresas que buscan expandir su
           presencia en el mercado digital. Con una plataforma de comercio
           electrónico bien diseñada y optimizada, las empresas pueden alcanzar
-          nuevos niveles de éxito y crecimiento. La clave del desarrollo
-          ecommerce radica en la creación de una experiencia de compra fluida
-          y atractiva para los clientes. Esto incluye una
-          navegación intuitiva, productos detallados y un proceso
-          de pago seguro. Una de las principales ventajas del desarrollo
-          ecommerce es poder llegar a un público más amplio.
+          nuevos niveles de éxito y crecimiento.Si tienes dudas, infórmate con nosotros.
         </p>
       </div>
       <div class="card__contenedor">
@@ -86,12 +90,7 @@
           En un mercado saturado, la personalización y la adaptabilidad son
           esenciales para destacar. Con servicios de desarrollo web a medida,
           como los ofrecidos por Kivuk, podemos crear sitios web que se
-          adapten perfectamente a sus necesidades y objetivos específicos. La
-          belleza del desarrollo web a medida radica en su capacidad para
-          ofrecer soluciones únicas y escalables. Con un enfoque centrado en
-          el cliente, Kivuk trabaja estrechamente con cada cliente para
-          comprender sus metas y desafíos.
-        </p>
+          adapten a sus necesidades.
       </div>
       <div class="card__contenedor">
         <p class="card__contenedorIcono">
@@ -101,17 +100,16 @@
         <p class="card__contenedorTexto">
           El desarrollo con los mejores diseñadores es la clave para construir
           una presencia digital única y efectiva. Kivuk le ofrece servicios con
-          los mejores profesionales que le ayudaran en todo el proceso. Podemos 
-          crear su sitio web personalizado desde cero usando lenguajes de 
-          programación específicos y adaptados a todos los clientes que les 
-          interese tener las mejores prestaciones en su web. Entendemos la 
-          importancia de ofrecer soluciones adaptadas al desarrollo de las páginas 
-          web, por ello en Kivuk le ofrecemos soluciones de alta calidad que 
-          impulsen el éxito de su web.
+          profesionales que le ayudaran en todo el proceso. Podemos 
+          crear su sitio web personalizado usando lenguajes de 
+          programación específicos y adaptados a las prestaciones de su web. 
         </p>
       </div>
     </section>
-<!--empieza la seccion Sbore mí-->
+<!--empieza la seccion Sbore mí -->
+   <!-- El siguiente codigo es un fragmento de HTML que define una sección con el título "Sobre mi" y un
+ párrafo de texto y un boton dentro de un div, todo ello dentro de otro div para poder ajustar mejor la colocacion y hemos insertado 
+ tambien una imagen mía -->
     <section class="sobre">
       <div class="sobre__contenedor">
         <h2 class="sobre__contenedorTitulo">SOBRE MÍ</h2>
@@ -137,6 +135,9 @@
       </div>
     </section>
 <!--empieza la seccion Proyectos-->
+
+   <!-- El código está creando una sección para mostrar mis proyectos. Incluye un título "NUESTROS PROYECTOS"
+  y 8 artículos, para crear cada uno de los proyectos proyecto con una imagen, un título y con un enlace a los diferentes proyectos-->
     <section class="proyectos">
       <h2 class="Proyectos__titulo">NUESTROS PROYECTOS</h2>
       <div class="proyectos__contenedor">
@@ -196,6 +197,9 @@
     </section>
   </main>
   <!--empieza la seccion Pie de página-->
+<!-- El siguiente codigo crea una sección de pie de página para un sitio web. Incluye enlaces a información legal.
+como "Aviso Legal" y "Politica de Privacidad", así como un enlace a una página de "Contáctanos".
+Además, hay íconos de redes sociales vinculados a Facebook, LinkedIn, Instagram y GitHub. -->
   <footer class="footer">
     <div class="footer__contenedorPaginas">
       <ul class="footer__contenedorLista">
@@ -206,10 +210,10 @@
     </div>
     <div class="footer__contenedorIconos">
       <ul class="footer__contenedorLista footer__contenedorLista--iconos">
-        <li class="footer__contenedorElemento"><i class="fa-brands fa-facebook"></i></li>
-        <li class="footer__contenedorElemento"><i class="fa-brands fa-twitter"></i></li>
-        <li class="footer__contenedorElemento"><i class="fa-brands fa-instagram"></i></li>
-        <li class="footer__contenedorElemento"><i class="fa-brands fa-square-github"></i></li>
+        <li><a href="https://www.facebook.com/?locale=es_ES" target="_blank" class="footer__contenedorElemento"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/aroa-chiva" target="_blank" class="footer__contenedorElemento"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" class="footer__contenedorElemento"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://github.com/Achipa6" target="_blank"  class="footer__contenedorElemento"><i class="fa-brands fa-square-github"></i></a></li>
       </ul>
     </div>
   </footer>

@@ -52,7 +52,7 @@ body{
 }
 .header__navLink:hover{
     text-decoration: none;
-    color: var(--morado);
+    color: var(--morado); /*usamos uno de nuestros colores definidos en root*/
     font-size: 2rem;
 }
 .header__oculto{
@@ -60,6 +60,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
+/*responsive*/
 @media screen and (max-width:768px) {
     .header{
         display: flex;
@@ -118,9 +119,9 @@ body{
 }
 @media screen and (max-width:768px) {
     .pagina__flecha{
-        width: 6rem;
-        height: 6rem;
-        right: -1.2rem;
+        width: 5rem;
+        height: 5rem;
+        right: -1rem;
         z-index: 2; /*para que al pasar por encima de las flechas de scroll se pueda ver*/
     }
 }
@@ -139,34 +140,63 @@ body{
     font-size: 5rem;
     padding: 0 1rem 0 0 ;
 }
+.sobremi__contenedorMas{
+   display: block;
+   background-color: rgb(234, 196, 234);
+   border-radius: 2rem;
+   text-align: center;
+}
+.sobremi__contenedorLeer{
+    text-decoration: none;
+    color: black;
+    margin:  0 0 1rem 0;
+}
 .sobremi__contenedorTexto{
     display: flex;
     align-items: center;
     padding: 0 1.5rem 0 0 ;
     animation: parpadeo 1s ease-in-out ;
+    background-color: rgb(234, 196, 234);
+    border-radius: 2rem;
+    padding: 1.5rem;
+}
+.sobremi__contenedorTexto-oculto{
+    display: none;
 }
 @media screen and (max-width:768px) {
+
     .sobremi__contenedor{
+        width: 100%;
         flex-direction: column;
-        padding: 1rem;
+        align-items: center;
+        padding: 0;
     }
     .sobre__contenedorTitulo{
+        text-align: center;
+        padding: 0 0 1rem ;
         font-size: 2rem;
-        padding: 1rem;
+
     }
     .sobremi__contenedorTexto{
         background-color: rgb(234, 196, 234);
         border-radius: 2rem;
         padding: 0.2rem;
-        width: 100%;
         display: flex;
-        flex-wrap: wrap;
+        padding: 1rem;
         text-align: center;
-
-
+       
     }
-    
+    .sobremi__contenedorMas{
+        background-color: rgb(234, 196, 234);
+        border-radius: 2rem;
+        text-align: center;
+        width: 90%;
+    }
+    .sobremi__contenedorTexto-oculto{
+        display: none;
+    }
 }
+
 @keyframes parpadeo {
     0%{
         opacity: 0;
@@ -205,12 +235,14 @@ body{
     z-index: 1;/*para que la flecha quede por encima de las imagenes*/
     margin-right: -3rem;
     text-shadow: 0.5rem 0.5rem 1rem var(--verde);
+    cursor: pointer;
 }
 @media screen and (max-width:768px) {
+
     .imagenes{
         width: 80%;
         height: 30rem;
-        display: block;
+        display: inline;
 
     }
     .imagenes__contenedor{
@@ -223,6 +255,8 @@ body{
         height:10rem;
     }
     .imagenes__contenedorBoton{
+        display: flex;
+        justify-content: center;
         margin: 0;
     }
 }
@@ -258,7 +292,7 @@ body{
     margin: 1rem 0 2rem 0;
     background-color: rgb(234, 196, 234);
     border-radius: 2rem;
-    padding: 0.5rem;
+    padding: 1.5rem;
 }
 @media screen and (max-width:768px) {
     .estudios{
@@ -268,12 +302,10 @@ body{
     .estudios__contenedor{
         display: flex;
         flex-direction: column;
-        align-items: start;
     }
 
     .estudios__contenedorPorcentaje{
-        width: 10rem;
-        height: 10rem;
+        display: none;
     }
     .estudios__contenedorInfo{
         width: 100%;
@@ -288,9 +320,9 @@ body{
         padding: 0;
     }
     .sobre__contenedorTitulo{
+        text-align: center;
+        padding: 0 0 1rem ;
 
-        padding: 0;
-        margin: 0;
     }
 }
 
@@ -343,6 +375,8 @@ body{
 }
 .contactame__formularioInput{
     border-radius: 1rem;
+    font-size: 1.5rem;
+
 }
 @media screen and (max-width:768px) {
     .contactame__contenedor{
@@ -350,11 +384,19 @@ body{
         flex-wrap: wrap;
         gap: 1rem;
         margin: 1rem;
+        justify-content: center;
     }
     .contactame__formulario{
         width: 90%;
         margin: 0;
     }
+    .sobre__contenedorTitulo{
+        text-align: center;
+        padding: 0 0 1rem ;
+
+    }
+
+
 }
 /*empieza la seccion footer*/
 .footer{
@@ -390,7 +432,7 @@ body{
 }
 .footer__contenedorElemento--link:hover{
     text-decoration: none;
-    color: var(--rosa);
+    color: var(--morado);
 }
 @media screen and (max-width:768px) {
     .footer{
