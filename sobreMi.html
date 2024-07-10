@@ -10,7 +10,7 @@
         <meta name="descriptiom" content="Portolio disañadora web"><!--descripción de nuestra pagina-->
         <link rel="stylesheet" type="text/css" href="style/sobreMi.css"> <!--para enlazar o unir los estilos, enlazar el css)-->
         <link rel="icon" type="image/x-icon" href="images/Imagen1.png"> <!--para cambiar el icono que sale en la pestaña de la pagina-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--para incluir la libreria de fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"><!--para incluir la libreria de fontawesome-->
         <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--para responsive, adapatar el contenido a los diferentes dispositivos-->
         <script src="script/sobreMi.js" defer></script><!--para enlazar el JavaScript y ponemos defer para que se espere el javascript a que carge todo el html primero-->
 
@@ -20,7 +20,7 @@
     <!--empieza la seccion de nuestra cabecera-->
       <header class="header">
         <nav class="header__nav">
-          <a href="index.html"><img src="images/kivukRosa.png" alt="KibukRosa" class="header__navImgen"/></a>
+          <a href="index.html"><img src="images/kivukRosa.png" alt="KibukRosa" class="header__navImgen"></a>
           <ul class="header__navLista">
             <li class="header__navElemento"><a href="inicio.html" class="header__navLink">Inicio</a></li>
             <li><a href="proyectos.html" class="header__navLink">Proyectos</a></li>
@@ -84,13 +84,13 @@ información adicional. El enlace "Leer menos..." permite al usuario ocultar la 
 <!--empieza la seccion imagenes-->
 <!--Con el codigo dsighiente creamos un p que usaremos como flecha hacia adelante y otro p quew usaremos como flecha hacia detras y tambien
 incluimos un div en el que insertasremos unas imagenes mediante JavaScript. Creamos un carrusel de imagenes-->
-    <section class="imagenes">
+    <div class="imagenes">
         <p class="imagenes__contenedorBoton" id="botonAtrasa">&leftarrow;</p>
         <div class="imagenes__contenedor">
             <img src="images/imagenesSobremi/bloques.jpg" alt="Bloques" class="imagenes__contenedorImg" id="imagen">
         </div>
         <p class="imagenes__contenedorBoton imagenes__contenedorBoton--derecha" id="botolonAdelanta">&rightarrow;</p>
-    </section>
+    </div>
 <!--empieza la seccion estudios y habilidades-->
 <!--El siguiente código es una sección HTML que contiene información sobre mis estudios y habilidades. Él parrafo
 incluye títulos, imágenes, texto que describe la formación académica del usuario y las habilidades adquiridas
@@ -143,7 +143,7 @@ El formulario también tiene un botón de envío para que los usuarios envíen s
                 <input name="apellidos" type="text" id="n2" size="20" class="contactame__formularioInput">
 
                 <label for="n3">Teléfono:</label>
-                <input name="Telefono" type="number" id="n3" size="10" maxlength="7" class="contactame__formularioInput"> <!-- maxlenght para definir los caracteres max -->
+                <input name="Telefono" type="number" id="n3" class="contactame__formularioInput"> <!-- maxlenght para definir los caracteres max -->
 
                 <label for="n4">Día de contacto:</label>
                 <input name="nombre" type="date" id="n4" class="contactame__formularioInput">  <!--añade un calendario para selecciona la fecha-->
@@ -156,9 +156,9 @@ El formulario también tiene un botón de envío para que los usuarios envíen s
                     <input type="radio" name="horario">Indiferente
                 </div>
                 <label for="n5">Motivo de consulta:</label>
-                <select name="seccionPagina" id="n5"class="contactame__formularioInput">
+                <select name="seccionPagina" id="n5" class="contactame__formularioInput">
                     <option value="Presupuesto">Presupuesto</option>
-                    <option value="Informacion"selected>Información</option> <!--sale seleccionada por defecto-->
+                    <option value="Informacion" selected>Información</option> <!--sale seleccionada por defecto-->
                     <option value="Dudas">Dudas</option>
                     <option value="Servicios">Servicios</option>
                     <option value="otros">Otros</option>
@@ -168,9 +168,6 @@ El formulario también tiene un botón de envío para que los usuarios envíen s
 
                 <div class="contactame__contenedorBoton"><button type="submit" class="contactame__formularioBoton" id="botonEnviar">Enviar</button> </div>
             </form>
-        </div>
-
-
         </div>
     </section>
   </main>

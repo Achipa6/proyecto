@@ -10,7 +10,7 @@
         <meta name="descriptiom" content="Portolio disañadora web"><!--descripción de nuestra pagina-->
         <link rel="stylesheet" type="text/css" href="style/proyectos.css"> <!--para enlazar o unir los estilos, enlazar el css)-->
         <link rel="icon" type="image/x-icon" href="images/Imagen1.png"> <!--para cambiar el icono que sale en la pestaña de la pagina-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--para incluir la libreria de fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"><!--para incluir la libreria de fontawesome-->
         <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--para responsive, adapatar el contenido a los diferentes dispositivos-->
         <script src="script/proyectos.js" defer></script><!--para enlazar el JavaScript y ponemos defer para que se espere el javascript a que carge todo el html primero-->
     </head>
@@ -31,7 +31,6 @@
                     <li class="header__ocultoElemento"><a href="sobreMi.html" class="header__ocultoLink">Sobre Mi</a></li>
                     <li class="header__ocultoElemento"><a href="index.html" class="header__ocultoLink">Portada</a></li>
                 </ul>
-                </ul>
                 
             </div>
         </header>
@@ -48,7 +47,7 @@
  en la pantalla adaptada par moviles -->
                 <h2 class="proyecto__texto">Pincha sobre las imagenes para ver los proyectos</h2>
                 <div class="proyecto__imagenes">
-                    <button type="button" id="rincones" value="0" class="proyecto__boton"><img src="images/rinconesmMolones.jpg" alt="rinconesmMolones" id="rincones" class="proyecto__imagenRincones proyecto__contededor--img"></button>
+                    <button type="button" id="rincones" value="0" class="proyecto__boton"><img src="images/rinconesmMolones.jpg" alt="rinconesmMolones" class="proyecto__imagenRincones proyecto__contededor--img"></button>
                     <button type="button" id="acordeon" value="1" class="proyecto__boton"><img src="images/acordeon.jpg" alt="Acordeón" class="proyecto__imagenAcordeon proyecto__contededor--img"></button>
                     <button type="button" id="hotel" value="2" class="proyecto__boton"><img src="images/hotelSevilla.jpg" alt="HotelSevilla" class="proyecto__imagenHotel proyecto__contededor--img"></button>
                     <button  type="button" id="iturri" value="3" class="proyecto__boton" ><img src="images/iturri.jpg" alt="Iturri" class="proyecto__imagenIturri proyecto__contededor--img"></button>
@@ -169,7 +168,7 @@ que les reconduce a la pagina  de contacto justo a la parte del formulario para 
             <section class="contacta">
                <h2 class="contacta__titulo">¿TE GUSTAN NUESTROS PROYECTOS?</h2>
                <div class="contacta__contenedor">
-                <video width="50%" height="" autoplay loop muted>
+                <video width="200" height="800" autoplay loop muted>
                     <source src="video/gifServicios.mp4"  type="video/mp4">
                    </video>
                 <div class="contacta__contenedorInfo">

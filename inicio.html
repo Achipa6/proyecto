@@ -6,14 +6,14 @@
 
 <head> <!--aquí ponemos todas nuestras configuraciones de página-->
   <title>Kikuk</title> <!--para que nos salga el nombre en la pestaña del navegador-->
-  <meta charset="utf-8" /> <!--para poder usar carateres como tildes, etc-->
-  <meta name="author" content="Aroa" /> <!--información para el navegador que nos incluya en su base de datos-->
-  <meta name="keywords" content="web, desarrollo, paginas, diseño, developer" /> <!--palabras clavepara cuamdo busquen en el buscador que aparezcamos-->
-  <meta name="descriptiom" content="Portolio disañadora web" /> <!--descripción de nuestra pagina-->
-  <link rel="stylesheet" type="text/css" href="style/inicio.css" /> <!--para enlazar o unir los estilos, enlazar el css)-->
-  <link rel="icon" type="image/x-icon" href="images/Imagen1.png" /> <!--para cambiar el icono que sale en la pestaña de la pagina-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--para incluir la libreria de fontawesome-->
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" /> <!--para responsive, adapatar el contenido a los diferentes dispositivos-->
+  <meta charset="utf-8"> <!--para poder usar carateres como tildes, etc-->
+  <meta name="author" content="Aroa"> <!--información para el navegador que nos incluya en su base de datos-->
+  <meta name="keywords" content="web, desarrollo, paginas, diseño, developer"> <!--palabras clavepara cuamdo busquen en el buscador que aparezcamos-->
+  <meta name="descriptiom" content="Portolio disañadora web"> <!--descripción de nuestra pagina-->
+  <link rel="stylesheet" type="text/css" href="style/inicio.css"> <!--para enlazar o unir los estilos, enlazar el css)-->
+  <link rel="icon" type="image/x-icon" href="images/Imagen1.png"> <!--para cambiar el icono que sale en la pestaña de la pagina-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"> <!--para incluir la libreria de fontawesome-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--para responsive, adapatar el contenido a los diferentes dispositivos-->
   <script src="script/inicio.js" defer></script> <!--para enlazar el JavaScript y ponemos defer para que se espere el javascript a que carge todo el html primero-->
 </head>
 
@@ -24,7 +24,7 @@
 enlaces (Sobre mi, Proyectos, Portada) diseñados como elementos de navegación. Cada enlace apunta a un diferente
 Página HTML dentro del sitio web.EL header oculto es para usarlo en la adaptabilidad para el movil-->
     <nav class="header__nav">
-      <a href="index.html"><img src="images/kivukMorado.png" alt="KibukMorado" class="header__navImgen"/></a>
+      <a href="index.html"><img src="images/kivukMorado.png" alt="KibukMorado" class="header__navImgen"></a>
       <ul class="header__navLista">
         <li class="header__navElemento"><a href="sobreMi.html" class="header__navLink">Sobre mi</a></li>
         <li><a href="proyectos.html" class="header__navLink">Proyectos</a></li>
@@ -48,7 +48,7 @@ Página HTML dentro del sitio web.EL header oculto es para usarlo en la adaptabi
  párrafo de texto dentro de un elemento de artículo.. -->
     <section class="descripcion">
       <h2 class="descripcion__contenedorTitulo">¿QUÉ ES KIVUK?</h2>
-      <article class="descripcion__contenedor">
+      <div class="descripcion__contenedor">
         <p class="descripcion__contenedorTexto">
           Somos tu aliado estratégico en Alicante para impulsar tu presencia
           en línea. Nuestra agencia de desarrollo web se especializa en crear
@@ -65,7 +65,7 @@ Página HTML dentro del sitio web.EL header oculto es para usarlo en la adaptabi
           ser tu socio en el camino hacia el éxito en línea en Alicante y más
           allá.
         </p>
-      </article>
+      </div>
     </section>
 <!-- empieza la seccion Cards-->
       <!-- El siguiente codigo es un fragmento de HTML que define una sección de Cards y dentro de cada card
@@ -94,7 +94,7 @@ Página HTML dentro del sitio web.EL header oculto es para usarlo en la adaptabi
       </div>
       <div class="card__contenedor">
         <p class="card__contenedorIcono">
-          <i class="fa-brands fa-wordpress-simple"></i></i>
+          <i class="fa-brands fa-wordpress-simple"></i>
         </p>
         <h3 class="card__contenedorTitulo">Desarrollo WordPress</h3>
         <p class="card__contenedorTexto">
